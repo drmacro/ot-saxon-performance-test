@@ -14,7 +14,7 @@ java "$JAVA_OPTS" -cp "$CLASSPATH" net.sf.saxon.Transform \
    "-o:$PWD/output/topicpull-result.xml" \
    "-s:$PWD/input/ot-user-guide/user-guide/DITA-globalization-xhtml.dita" \
    "-t" \
-   "defaultLanguage=en-US"
+   "defaultLanguage=en-US" &> "$PWD/saxon91.log"
    
 #
 # End of script

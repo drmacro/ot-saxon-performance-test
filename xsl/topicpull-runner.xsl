@@ -12,7 +12,7 @@
   <xsl:import href="preprocess/topicpull.xsl"/>
   
   <xsl:param name="inputDir" as="xs:string"
-    select="string-join(tokenize(document-uri(.), '/')[position() lt last()], '/')"
+    select="string-join(tokenize(document-uri(.), '/')[position() lt last() -1 ], '/')"
   />
   <xsl:param name="outDir" as="xs:string"
     select="string-join((tokenize(document-uri(.), '/')[position() lt (last() - 3)], 'output'), '/')"
@@ -20,11 +20,11 @@
   
   <xsl:template name="run">
     <xsl:variable name="inputURI" as="xs:string"
-      select="concat($inputDir, '?', 'select=*.dita*')"
+      select="concat($inputDir, '?', 'select=*.dita*&amp;recurse=yes')"
     />
     <xsl:for-each select="collection($inputURI)">
-      <xsl:variable name="filename" as="xs:string"
-        select="tokenize(string(document-uri(.)), '/')[last()]"
+      <xsl:variable name="filename" as="xs:string*"
+        select="tokenize(string(document-uri(.)), '/')[position() ge (last() - 1)]"
       />
       <xsl:variable name="resultUri" as="xs:string"
         select="string-join(($outDir, $filename), '/')"
