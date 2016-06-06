@@ -20,7 +20,7 @@
   
   <xsl:template name="run">
     <xsl:variable name="inputURI" as="xs:string"
-      select="concat($inputDir, '?', 'select=*.dita*&amp;recurse=yes')"
+      select="concat($inputDir, '?', 'select=*.dita*&amp;recurse=yes&amp;on-error=warning')"
     />
     <xsl:for-each select="collection($inputURI)">
       <xsl:variable name="filename" as="xs:string*"
