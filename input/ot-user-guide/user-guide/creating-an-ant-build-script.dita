@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="creating-an-ant-build-script" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="task:1;5:41">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="title:1;6:10">Creating an Ant build script</title>
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="shortdesc:1;7:14">Instead of typing the DITA-OT parameters at the command prompt, you might want to create an Ant build
+    script that contains all of the parameters.</shortdesc>
+  <taskbody class="- topic/body task/taskbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="taskbody:1;9:13">
+    <steps class="- topic/ol task/steps " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="steps:1;10:12">
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="step:1;11:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:1;12:14">Create an XML file that contains the following content:</cmd>
+        <info class="- topic/itemgroup task/info " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="info:1;13:15">
+          <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="codeblock:1;14:22">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;project name="%project-name%" default="%default-target%" basedir="."&gt;
+
+  &lt;property name="dita.dir" location="%path-to-DITA-OT%"/&gt;
+ 
+  &lt;target name="%target-name%"&gt;
+    &lt;ant antfile="${dita.dir}/build.xml"&gt;
+      &lt;property name="args.input" value="%DITA-input%"/&gt;
+      &lt;property name="transtype" value="html5"/&gt;
+    &lt;/ant&gt;
+  &lt;/target&gt;
+
+&lt;/project&gt;</codeblock>
+        </info>
+        <info class="- topic/itemgroup task/info " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="info:2;28:15">You will replace the placeholder content (indicated by the % signs) with content applicable to your
+          environment.</info>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="step:2;31:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:2;32:14">Specify project information:</cmd>
+        <substeps class="- topic/ol task/substeps " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substeps:1;33:19">
+          <substep importance="optional" class="- topic/li task/substep " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substep:1;34:42">
+            <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:3;35:18">Set the value of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="xmlatt:1;35:47">name</xmlatt> attribute to the name of your
+              project.</cmd>
+          </substep>
+          <substep class="- topic/li task/substep " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substep:2;38:20">
+            <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:4;39:18">Set the value of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="xmlatt:2;39:47">default</xmlatt> attribute to the name of a target in
+              the build script.</cmd>
+            <info class="- topic/itemgroup task/info " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="info:3;41:19">If the build script is invoked without specifying a target, this target will be
+              run.</info>
+          </substep>
+        </substeps>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="step:3;46:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:5;47:14">Set the value of the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:1;47:45">dita.dir</parmname> property to the location of the DITA-OT.</cmd>
+        <info class="- topic/itemgroup task/info " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="info:4;48:15">This can be a fully qualified path, or you can specify it relative to the location of the Ant build script
+          that you are writing. </info>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="step:4;51:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:6;52:14">Create the Ant target:</cmd>
+        <substeps class="- topic/ol task/substeps " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substeps:2;53:19">
+          <substep class="- topic/li task/substep " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substep:3;54:20">
+            <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:7;55:18">Set the value of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="xmlatt:3;55:47">name</xmlatt> attribute.</cmd>
+          </substep>
+          <substep class="- topic/li task/substep " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substep:4;57:20">
+            <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:8;58:18">Specify the value for the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:2;58:54">args.input</parmname> property.</cmd>
+          </substep>
+          <substep class="- topic/li task/substep " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="substep:5;60:20">
+            <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:9;61:18">Specify the value of the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:3;61:53">transtype</parmname> property.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="step:5;65:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="cmd:10;66:14">Save the build script.</cmd>
+      </step>
+    </steps>
+    <example class="- topic/example " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="example:1;69:14">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="p:1;70:10">The following Ant build script generates CHM and PDF output for the sample DITA
+        maps.<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="codeblock:2;71:25">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+
+&lt;project name="build-chm-pdf" default="all" basedir="."&gt;
+
+  &lt;property name="dita.dir" location="${basedir}/../../.."/&gt;
+
+  &lt;target name="all" description="build CHM and PDF" depends="chm,pdf"/&gt;
+
+  &lt;target name="chm" description="build CHM"&gt;
+    &lt;ant antfile="${dita.dir}/build.xml"&gt;
+      &lt;property name="args.input" location="../sequence.ditamap"/&gt;
+      &lt;property name="transtype" value="htmlhelp"/&gt;
+      &lt;property name="output.dir" location="../out/chm"/&gt;
+      &lt;property name="args.gen.task.lbl" value="YES"/&gt;
+      &lt;property name="args.breadcrumbs" value="yes"/&gt;
+    &lt;/ant&gt;
+  &lt;/target&gt;
+
+  &lt;target name="pdf" description="build PDF"&gt;
+    &lt;ant antfile="${dita.dir}/build.xml"&gt;
+      &lt;property name="args.input" location="../taskbook.ditamap"/&gt;
+      &lt;property name="transtype" value="pdf"/&gt;
+      &lt;property name="output.dir" location="../out/pdf"/&gt;
+      &lt;property name="args.gen.task.lbl" value="YES"/&gt;
+      &lt;property name="args.rellinks" value="nofamily"/&gt;
+    &lt;/ant&gt;
+  &lt;/target&gt;
+
+&lt;/project&gt;</codeblock></p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="p:2;72:10">In addition to the mandatory parameters (<parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:4;72:61">args.input</parmname> and <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:5;72:97">transtype</parmname>),
+        the chm and pdf targets each specify some optional parameters:
+        <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="ul:1;74:13">
+          <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="li:1;75:15">The <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:6;75:29">args.gen.task.lbl</parmname> property is set to YES, which ensures that headings are
+            automatically generated for the sections of task topics.</li>
+          <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="li:2;77:15">The <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="parmname:7;77:29">output.dir</parmname> property specifies where the DITA-OT writes the output of the
+            transformations.</li>
+        </ul></p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="p:3;80:10">The pdf target also specifies that related links should be generated in the PDF, but only
+        those links that are created by relationship tables and <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="xmlelement:1;81:77">link</xmlelement>
+        elements.</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="p:4;83:10">Finally, the all target simply specifies that both the chm and pdf target should be run.</p>
+    </example>
+    <postreq class="- topic/section task/postreq " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="postreq:1;85:14">Another resource for learning about Ant scripts are the files in the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/conref-task.dita" xtrc="filepath:3;14:42"><varname class="+ topic/keyword sw-d/varname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/conref-task.dita" xtrc="varname:3;14:51">dita-ot-dir</varname>/docsrc/samples</filepath><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/creating-an-ant-build-script.dita" xtrc="filepath:2;86:74">/ant_samples</filepath>
+      directory. This directory contains the Ant build files used by the demo build, as well as
+      templates that you can use to create Ant scripts.</postreq>
+  </taskbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:8;25:99" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap"><link class="- topic/link " format="dita" href="../user-guide/publishing-with-ant.dita" mapclass="- map/topicref " role="parent" scope="local" type="task" xtrc="topicref:5;22:84" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Publishing DITA content from Ant</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You can use Ant to invoke the DITA Open Toolkit and generate output. You can use the complete set of     parameters that are supported by the toolkit.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:13;57:61" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap"><link class="- topic/link " format="dita" href="../user-guide/build-migrating-ant-to-dita.dita" mapclass="- map/topicref " role="friend" scope="local" type="task" xtrc="topicref:14;61:51" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Migrating Ant builds to use the dita command</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Although Ant builds are still supported in the DITA Open Toolkit, you might want to switch to use the new       <cmdname class="+ topic/keyword sw-d/cmdname " xtrc="cmdname:2;8:16" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/migrating-ant-to-dita.dita">dita</cmdname> command.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:5;38:117" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><link class="- topic/link " format="dita" href="../user-guide/building-with-ant.dita" mapclass="- map/topicref " role="sibling" scope="local" type="task" xtrc="topicref:4;37:103" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Building output using Ant</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You can build output by using an Ant build script to provide the DITA-OT parameters.</desc></link><link class="- topic/link " format="dita" href="../user-guide/ant.dita" mapclass="- map/topicref " role="friend" scope="local" type="concept" xtrc="topicref:3;33:74" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Ant</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Ant is a Java-based, open-source tool that is provided by the Apache Foundation. It can be used to declare     a sequence of build actions. It is well suited for both development and document builds. The toolkit ships with a     copy of Ant.</desc></link><link class="- topic/link " format="dita" href="../parameters/parameters_intro.dita" mapclass="- map/topicref " role="friend" scope="local" type="reference" xtrc="topicref:6;42:84" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DITA-OT parameters</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Certain parameters apply to all DITA-OT transformations. Other parameters are common to the HTML-based     transformations. Finally, some parameters apply only to specific transformation types. These parameters can be     passed as options to the <cmdname class="+ topic/keyword sw-d/cmdname " xtrc="cmdname:1;10:39" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/parameters_intro.dita">dita</cmdname> command using the <option class="+ topic/keyword pr-d/option " xtrc="option:1;10:80" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/parameters_intro.dita">-Dparameter-name=value</option> syntax or     included in build scripts as Ant properties.</desc></link><link class="- topic/link " format="html" href="http://ant.apache.org/manual" mapclass="- map/topicref " role="friend" scope="external" type="reference" xtrc="topicref:7;44:11" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Apache Ant documentation</linktext></link></linkpool></related-links></task>

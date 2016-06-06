@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/resources?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/resources/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Subject Scheme Map//EN?><?doctype-system subjectScheme.dtd?><subjectScheme xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" processing-role="resource-only" toc="no" ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (map subjectScheme)                            a(props deliveryTarget)                            (topic hazard-d)                            (topic hi-d)                            (topic ut-d)   " class="- map/map subjectScheme/subjectScheme " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectScheme:1;5:16" cascade="merge">
+  <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="audience" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:1;6:31">
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="novice" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:2;7:32"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="expert" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:3;8:32"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="xslt-customizer" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:4;9:41"/>
+  </subjectdef>
+  <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="os" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:5;11:25">
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="windows" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:6;12:33"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="unix" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:7;13:29">
+      <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="osx" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:8;14:31"/>
+      <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="linux" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:9;15:33"/>
+    </subjectdef>
+  </subjectdef>
+  <enumerationdef class="- map/topicref subjectScheme/enumerationdef " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="enumerationdef:1;18:19">
+    <attributedef name="audience" translate="no" class="- topic/data subjectScheme/attributedef " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="attributedef:1;19:36"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="audience" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:10;20:36"/>
+  </enumerationdef>
+  <enumerationdef class="- map/topicref subjectScheme/enumerationdef " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="enumerationdef:2;22:19">
+    <attributedef name="platform" translate="no" class="- topic/data subjectScheme/attributedef " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="attributedef:2;23:36"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="os" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/subjectscheme.ditamap" xtrc="subjectdef:11;24:30"/>
+  </enumerationdef>
+</subjectScheme>

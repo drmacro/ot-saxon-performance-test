@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="dita2pdf-customization" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="task:1;5:49">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:1;6:10">Example: Creating a simple PDF plug-in</title>
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="shortdesc:1;7:14">This scenario walks through the process of creating a very simple plug-in
+      (<codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeph:1;8:16">com.example.print-pdf</codeph>) that creates a new transformation type: <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="option:1;8:96">print-pdf</option>. </shortdesc>
+  <taskbody class="- topic/body task/taskbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="taskbody:1;9:13">
+    <context class="- topic/section task/context " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="context:1;10:14">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="p:1;11:10">The <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="option:2;11:22">print-pdf</option> transformation has the following characteristics:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="ul:1;12:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="li:1;13:13">Uses A4 paper </li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="li:2;14:13">Renders figures with a title at the top and a description at the bottom</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="li:3;15:13">Use em dashes as the symbols for unordered lists</li>
+      </ul>
+    </context>
+    <steps class="- topic/ol task/steps " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="steps:1;18:12">
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:1;19:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:1;20:14">In the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:1;20:31">plugins</filepath> directory, create a directory named
+            <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:2;21:23">com.example.print-pdf</filepath>.</cmd>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:2;23:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:2;24:14">In the new <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:3;24:35">com.example.print-pdf</filepath> directory, create a plug-in configuration file
+            (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:4;25:24">plugin.xml</filepath>) that declares the new <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="option:3;25:77">print-pdf</option> transformation and its
+          dependencies.</cmd>
+        <info class="- topic/itemgroup task/info " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="info:1;27:15">
+          <fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="fig:1;28:16">
+            <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:2;29:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:5;29:30">plugin.xml</filepath> file</title>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:1;30:24">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;plugin id="com.example.print-pdf"&gt;
+  &lt;require plugin="org.dita.pdf2"/&gt;
+  &lt;feature extension="dita.conductor.transtype.check" value="print-pdf"/&gt;
+  &lt;feature extension="dita.transtype.print" value="print-pdf"/&gt;
+  &lt;feature extension="dita.conductor.target.relative" file="integrator.xml"/&gt;
+&lt;/plugin&gt;</codeblock>
+          </fig>
+        </info>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:3;40:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:3;41:14">Add an Ant script (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:6;41:43">integrator.xml</filepath>) to define the transformation type.</cmd>
+        <info class="- topic/itemgroup task/info " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="info:2;42:15">
+          <fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="fig:2;43:16">
+            <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:3;44:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:7;44:30">integrator.xml</filepath> file</title>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:2;45:24">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;project name="com.example.print-pdf"&gt;
+  &lt;target name="dita2print-pdf.init"&gt;
+    &lt;property name="customization.dir" location="${dita.plugin.com.example.print-pdf.dir}/cfg"/&gt;
+  &lt;/target&gt;
+  &lt;target name="dita2print-pdf" depends="dita2print-pdf.init, dita2pdf2"/&gt;
+&lt;/project&gt;</codeblock>
+          </fig></info>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:4;54:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:4;55:14">In the new plug-in directory, add a <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:8;55:60">cfg/catalog.xml</filepath> file that specifies the custom
+          XSLT style sheets.</cmd>
+        <stepxmp class="- topic/itemgroup task/stepxmp " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="stepxmp:1;57:18">
+          <fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="fig:3;58:16">
+            <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:4;59:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:9;59:30">cfg/catalog.xml</filepath> file</title>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:3;60:24">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;catalog prefer="system" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"&gt;
+  &lt;uri name="cfg:fo/attrs/custom.xsl" uri="fo/attrs/custom.xsl"/&gt;
+  &lt;uri name="cfg:fo/xsl/custom.xsl" uri="fo/xsl/custom.xsl"/&gt;
+&lt;/catalog&gt;</codeblock>
+          </fig>
+        </stepxmp>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:5;68:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:5;69:14">Create the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:10;69:35">cfg/fo/attrs/custom.xsl</filepath> file, and add attribute and variable overrides to
+          it.</cmd>
+        <stepxmp class="- topic/itemgroup task/stepxmp " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="stepxmp:2;71:18">For example, add the content highlighted with bold to change the page size to A4.<fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="fig:4;71:104">
+            <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:5;72:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:11;72:30">cfg/fo/attrs/custom.xsl</filepath> file</title>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:4;73:24">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                version="2.0"&gt;
+ <b class="+ topic/ph hi-d/b " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="b:1;76:5"> &lt;!-- Change page size to A4 --&gt;
+  &lt;xsl:variable name="page-width"&gt;210mm&lt;/xsl:variable&gt;
+  &lt;xsl:variable name="page-height"&gt;297mm&lt;/xsl:variable&gt;</b>
+&lt;/xsl:stylesheet&gt;</codeblock>
+          </fig></stepxmp>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:6;82:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:6;83:14">Create the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:12;83:35">cfg/fo/xsl/custom.xsl</filepath> file, and add XSLT overrides to it.</cmd>
+        <stepxmp class="- topic/itemgroup task/stepxmp " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="stepxmp:3;84:18">For example, the following code changes the rendering of <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="xmlelement:1;84:87">figure</xmlelement> elements.<fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="fig:5;84:121">
+            <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:6;85:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:13;85:30">cfg/fo/xsl/custom.xsl</filepath> file</title>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:5;86:24">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:fo="http://www.w3.org/1999/XSL/Format"
+                version="2.0"&gt;
+  &lt;!-- Move figure title to top and description to bottom --&gt;
+  &lt;xsl:template match="*[contains(@class,' topic/fig ')]"&gt;
+    &lt;fo:block xsl:use-attribute-sets="fig"&gt;
+      &lt;xsl:call-template name="commonattributes"/&gt;
+      &lt;xsl:if test="not(@id)"&gt;
+        &lt;xsl:attribute name="id"&gt;
+          &lt;xsl:call-template name="get-id"/&gt;
+        &lt;/xsl:attribute&gt;
+      &lt;/xsl:if&gt;
+      &lt;xsl:apply-templates select="*[contains(@class,' topic/title ')]"/&gt;
+      &lt;xsl:apply-templates select="*[not(contains(@class,' topic/title ') or contains(@class,' topic/desc '))]"/&gt;
+      &lt;xsl:apply-templates select="*[contains(@class,' topic/desc ')]"/&gt;
+    &lt;/fo:block&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;</codeblock>
+          </fig></stepxmp>
+      </step>
+      <step class="- topic/li task/step " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="step:7;108:13">
+        <cmd class="- topic/ph task/cmd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="cmd:7;109:14">Create an English-language variable-definition file (<filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:14;109:77">cfg/common/vars/en.xml</filepath>) and make
+          any necessary modifications to it.</cmd>
+        <stepxmp class="- topic/itemgroup task/stepxmp " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="stepxmp:4;111:18">For example, the following code removes the period after the number for an ordered-list item; it also
+          specifies that the bullet for an unordered list item should be an em dash.<fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="fig:6;112:90">
+            <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="title:7;113:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="filepath:15;113:30">cfg/common/vars/en.xml</filepath> file</title>
+            <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:6;114:24">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;vars xmlns="http://www.idiominc.com/opentopic/vars"&gt;
+  &lt;!-- Remove dot from list number --&gt;
+  &lt;variable id="Ordered List Number"&gt;&lt;param ref-name="number"/&gt;&lt;/variable&gt;
+  &lt;!-- Change unordered list bullet to an em dash --&gt;
+  &lt;variable id="Unordered List bullet"&gt;&amp;#x2014;&lt;/variable&gt;
+&lt;/vars&gt;</codeblock>
+          </fig></stepxmp>
+      </step>
+    </steps>
+    <result id="result_23y_yv3_tf" class="- topic/section task/result " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="result:1;124:36">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="p:2;125:10">The new plug-in directory has the following layout and files:</p>
+      <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="codeblock:7;126:18">com.example.print-pdf/
+  cfg/
+    common/
+      vars/
+        en.xml
+    fo/
+      attrs/
+        custom.xsl
+      xsl/
+        custom.xsl
+    catalog.xml
+  integrator.xml
+  plugin.xml</codeblock>
+    </result>
+    <postreq id="postreq_mqj_zz3_tf" class="- topic/section task/postreq " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="postreq:1;140:38">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="p:3;141:10">Run the integration process to install the plug-in and make the <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-example.dita" xtrc="option:4;141:82">print-pdf</option> transformation
+        available.</p>
+    </postreq>
+  </taskbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:6;12:108" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization.ditamap"><link class="- topic/link " format="dita" href="../dev_ref/pdf-customization.dita" mapclass="- map/topicref " role="parent" scope="local" type="task" xtrc="topicref:1;7:43" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Customizing PDF output</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You can create custom DITA-OT plug-ins that build on the default DITA to PDF transformation. Plug-ins can     customize covers and page layouts, modify formatting, override logic of the default PDF plug-in, and much     more.</desc></link></linkpool></related-links></task>

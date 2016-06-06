@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/parameters?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/parameters/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="configuration" xml:lang="en" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="reference:1;5:45">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="title:1;6:10"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="filepath:1;6:20">configuration.properties</filepath> file</title>
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="shortdesc:1;7:14">The <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="filepath:2;7:28">lib/configuration.properties</filepath> file controls certain common properties, as well as
+    some properties that control PDF processing.</shortdesc>
+  <prolog class="- topic/prolog " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="prolog:1;9:11">
+    <metadata class="- topic/metadata " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="metadata:1;10:15">
+      <keywords class="- topic/keywords " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="keywords:1;11:17">
+        <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:1;12:20">configuration properties 
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:2;13:22">default.language</indexterm>
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:3;14:22">generate-debug-attributes</indexterm>
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:4;15:22">processing-mode</indexterm>
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:5;16:22">org.dita.pdf2.i18n.enabled</indexterm>
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:6;17:22">org.dita.pdf2.use-out-temp</indexterm>
+        </indexterm>
+        <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:7;19:20">files
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:8;20:22">lib/configuration.properties file</indexterm>
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:9;21:22">topic.fo file</indexterm>
+        </indexterm>
+        <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:10;23:20">topic.fo
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:11;24:22">location of</indexterm>
+        </indexterm>
+        <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:12;26:20">PDF processing
+          <indexterm class="- topic/indexterm " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="indexterm:13;27:22">configuration properties</indexterm>
+        </indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="refbody:1;32:12">
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="section:1;33:14">
+      <fig class="- topic/fig " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="fig:1;34:12">
+        <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="title:2;35:16">Properties set in the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="filepath:3;35:48">lib/configuration.properties</filepath> file</title>
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="parml:1;36:16">
+          <plentry id="default.language" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="plentry:1;37:42">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pt:1;38:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="parmname:1;38:27">default.language</parmname></pt>
+            <pd id="default.language.desc" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pd:1;39:44">Specifies the language that is used if the input file does not have the
+                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="xmlatt:1;40:25">xml:lang</xmlatt> attribute set on the root element. By default, this is set to
+                <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="option:1;41:25">en</option>. The allowed values are those that are defined in IETF BCP 47,
+              <xref href="https://tools.ietf.org/html/bcp47" format="html" scope="external" class="- topic/xref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="xref:1;42:93"><?ditaot usertext?>Tags for Identifying
+                Languages</xref>.</pd>
+          </plentry>
+          
+          <plentry id="org.dita.pdf2.i18n.enabled" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="plentry:2;67:52">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pt:2;68:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="parmname:2;68:27">org.dita.pdf2.i18n.enabled</parmname></pt>
+            <pd id="org.dita.pdf2.i18n.enabled.desc" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pd:2;69:54">(PDF transformation only) Enables I18N font processing. The
+              following values are allowed:
+              <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="ul:1;71:19">
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="li:1;72:21"><option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="option:2;72:29">true</option> (default) — Enables I18N processing</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="li:2;73:21"><option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="option:3;73:29">false</option> — Disables I18N processing</li>
+              </ul>
+              <draft-comment author="Kristen James Eberlein" time="16 August 2012" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="draft-comment:1;75:84">This needs beefing up. Here is info
+                provided by Jarno Elovirta:
+                <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="p:1;77:20">(IIRC, pre 1.0 versions of FOP didn't correctly implement font selection in XSL FO files, that's the
+                  reason for this feature existing). The PDF2 I18N allows you to say define which characters are output
+                  with which pseudo-font, and the font mapping files define the actual font. E.g. the configuration for
+                  English at src/main/plugins/org.dita.pdf2/cfg/fo/i18n/en.xml
+                  is:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="codeblock:1;81:33">
+        &lt;alphabet char-set="SymbolsSuperscript"&gt;
+            &lt;character-set&gt;
+                &lt;!-- Copyright --&gt;
+                &lt;character&gt;&amp;#169;&lt;/character&gt;
+                &lt;!-- Registered Trademark --&gt;
+                &lt;character&gt;&amp;#174;&lt;/character&gt;
+                &lt;!-- Trademark --&gt;
+                &lt;character&gt;&amp;#8482;&lt;/character&gt;
+                &lt;!-- Service mark --&gt;
+                &lt;character&gt;&amp;#2120;&lt;/character&gt;
+            &lt;/character-set&gt;
+        &lt;/alphabet&gt;
+        &lt;alphabet char-set="SubmenuSymbol"&gt;
+            &lt;character-set&gt;
+                &lt;character&gt;&amp;#x27A4;&lt;/character&gt;
+            &lt;/character-set&gt;
+        &lt;/alphabet&gt;
+</codeblock></p>
+                <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="p:2;100:20">That is, those specific characters are marked as "SymbolsSuperscript" or "SubmenuSymbol" charset. The
+                  font mappings at src/main/plugins/org.dita.pdf2/cfg/fo/font-mappings.xml then define which font to use
+                  for them,
+                  e.g.:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="codeblock:2;103:35">&lt;physical-font char-set="SymbolsSuperscript"&gt;
+      &lt;font-face&gt;Helvetica, Arial Unicode MS&lt;/font-face&gt;
+      &lt;baseline-shift&gt;20%&lt;/baseline-shift&gt;
+      &lt;override-size&gt;smaller&lt;/override-size&gt;
+    &lt;/physical-font&gt;</codeblock></p>
+                <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="p:3;108:20">The I18N processing is on by default (because it's been on before), but for most users it's just an
+                  additional level of complexity which should be turned off and support for multiple languages be
+                  handled in XSLT code.</p>
+              </draft-comment>
+            </pd>
+          </plentry>
+          
+          <plentry id="plugindirs" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="plentry:3;124:36">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pt:3;125:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="parmname:3;125:27">plugindirs</parmname></pt>
+            <pd id="plugindirs.desc" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pd:3;126:38">A semicolon-separated list of directory paths that the DITA-OT searches for
+              plug-ins to integrate; any relative paths are resolved against the DITA-OT base directory. Any immediate
+              subdirectory that contains a <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="filepath:4;128:54">plugin.xml</filepath> file is integrated.</pd>
+          </plentry>
+          <plentry id="plugin.ignores" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="plentry:4;130:40">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pt:4;131:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="parmname:4;131:27">plugin.ignores</parmname></pt>
+            <pd id="plugin.ignores.desc" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/lib-configuration-properties.dita" xtrc="pd:4;132:42">A semicolon-separated list of directory names to be ignored during plug-in
+              integration; any relative paths are resolved against the DITA-OT base directory.</pd>
+          </plentry>
+        </parml>
+      </fig>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:18;26:102" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/reference.ditamap"><link class="- topic/link " format="dita" href="../parameters/configuration-properties.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:16;24:50" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/reference.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Configuration properties</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The DITA-OT uses <filepath class="+ topic/ph sw-d/filepath " xtrc="filepath:1;7:41" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/configuration-properties.dita">.properties</filepath> files and internal properties that store configuration     settings for the toolkit and its plug-ins. Configuration properties are available to both Ant and Java processes,     but unlike argument properties, they cannot be set at run time.</desc></link></linkpool></related-links></reference>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><!--This file is part of the DITA Open Toolkit project. See the accompanying LICENSE.md file for applicable licenses.--><subjectScheme xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" class="- map/map subjectScheme/subjectScheme " ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (map subjectScheme)                            a(props deliveryTarget)                            (topic hazard-d)                            (topic hi-d)                            (topic ut-d)   " processing-role="resource-only" toc="no">
+  <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="audience">
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="novice"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="expert"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="xslt-customizer"/>
+  </subjectdef>
+  <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="os">
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="windows"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="unix">
+      <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="osx"/>
+      <subjectdef class="- map/topicref subjectScheme/subjectdef " keys="linux"/>
+    </subjectdef>
+  </subjectdef>
+  <enumerationdef class="- map/topicref subjectScheme/enumerationdef ">
+    <attributedef class="- topic/data subjectScheme/attributedef " name="audience" translate="no"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="audience"/>
+  </enumerationdef>
+  <enumerationdef class="- map/topicref subjectScheme/enumerationdef ">
+    <attributedef class="- topic/data subjectScheme/attributedef " name="platform" translate="no"/>
+    <subjectdef class="- map/topicref subjectScheme/subjectdef " keyref="os"/>
+  </enumerationdef>
+</subjectScheme>

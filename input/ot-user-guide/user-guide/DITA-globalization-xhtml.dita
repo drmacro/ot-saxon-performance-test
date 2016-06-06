@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="dita-globalization-xhtml" xml:lang="en-US" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="reference:1;5:59">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="title:1;6:10">Supported languages: HTML-based transformations</title>
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="shortdesc:1;7:14">The DITA Open Toolkit supports over 50 languages and language variants for the HTML-based transformations
+    such as HTML5, XHTML, Eclipse Help, HTML Help, and TocJS.</shortdesc>
+  <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="refbody:1;9:12">
+    <table frame="all" rowsep="1" colsep="1" class="- topic/table " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="table:1;10:46">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="title:2;11:14">Supported languages: HTML-based transformations</title>
+      <tgroup cols="2" class="- topic/tgroup " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="tgroup:1;12:24">
+        <colspec colnum="1" colwidth="1.0*" rowheader="headers" class="- topic/colspec " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="colspec:1;13:46" colname="col1"/>
+        <colspec colnum="2" colwidth="1.0*" rowheader="headers" class="- topic/colspec " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="colspec:2;14:46" colname="col2"/>
+        <thead class="- topic/thead " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="thead:1;15:16">
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:1;16:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:1;17:20" colname="col1" dita-ot:x="1" dita-ot:y="1">Language</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:2;18:20" colname="col2" dita-ot:x="2" dita-ot:y="1">Language code</entry>
+          </row>
+        </thead>
+        <tbody class="- topic/tbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="tbody:1;21:16">
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:2;22:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:3;23:20" colname="col1" dita-ot:x="1" dita-ot:y="2">Arabic</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:4;24:20" colname="col2" dita-ot:x="2" dita-ot:y="2">ar or ar-EG</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:3;26:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:5;27:20" colname="col1" dita-ot:x="1" dita-ot:y="3">Belarusian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:6;28:20" colname="col2" dita-ot:x="2" dita-ot:y="3">be or be-BY</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:4;30:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:7;31:20" colname="col1" dita-ot:x="1" dita-ot:y="4">Bulgarian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:8;32:20" colname="col2" dita-ot:x="2" dita-ot:y="4">bg or bg-BG</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:5;34:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:9;35:20" colname="col1" dita-ot:x="1" dita-ot:y="5">Catalan</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:10;36:20" colname="col2" dita-ot:x="2" dita-ot:y="5">ca-ES</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:6;38:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:11;39:20" colname="col1" dita-ot:x="1" dita-ot:y="6">Chinese (simplified)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:12;40:20" colname="col2" dita-ot:x="2" dita-ot:y="6">zh-CN or zh-Hans</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:7;42:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:13;43:20" colname="col1" dita-ot:x="1" dita-ot:y="7">Chinese (traditional)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:14;44:20" colname="col2" dita-ot:x="2" dita-ot:y="7">zh-TW or zh-Hant</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:8;46:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:15;47:20" colname="col1" dita-ot:x="1" dita-ot:y="8">Croatian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:16;48:20" colname="col2" dita-ot:x="2" dita-ot:y="8">hr or hr-HR</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:9;50:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:17;51:20" colname="col1" dita-ot:x="1" dita-ot:y="9">Czech</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:18;52:20" colname="col2" dita-ot:x="2" dita-ot:y="9">cs or cs-CZ</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:10;54:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:19;55:20" colname="col1" dita-ot:x="1" dita-ot:y="10">Danish</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:20;56:20" colname="col2" dita-ot:x="2" dita-ot:y="10">da or da-DK</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:11;58:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:21;59:20" colname="col1" dita-ot:x="1" dita-ot:y="11">Dutch</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:22;60:20" colname="col2" dita-ot:x="2" dita-ot:y="11">nl or nl-NL</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:12;62:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:23;63:20" colname="col1" dita-ot:x="1" dita-ot:y="12">Dutch (Belgian)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:24;64:20" colname="col2" dita-ot:x="2" dita-ot:y="12">nl-BE</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:13;66:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:25;67:20" colname="col1" dita-ot:x="1" dita-ot:y="13">English (British)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:26;68:20" colname="col2" dita-ot:x="2" dita-ot:y="13">en-GB</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:14;70:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:27;71:20" colname="col1" dita-ot:x="1" dita-ot:y="14">English (Canadian)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:28;72:20" colname="col2" dita-ot:x="2" dita-ot:y="14">en-CA</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:15;74:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:29;75:20" colname="col1" dita-ot:x="1" dita-ot:y="15">English (US)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:30;76:20" colname="col2" dita-ot:x="2" dita-ot:y="15">en or en-US</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:16;78:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:31;79:20" colname="col1" dita-ot:x="1" dita-ot:y="16">Estonian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:32;80:20" colname="col2" dita-ot:x="2" dita-ot:y="16">et or et-EE</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:17;82:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:33;83:20" colname="col1" dita-ot:x="1" dita-ot:y="17">Finnish</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:34;84:20" colname="col2" dita-ot:x="2" dita-ot:y="17">fi or fi-FI</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:18;86:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:35;87:20" colname="col1" dita-ot:x="1" dita-ot:y="18">French</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:36;88:20" colname="col2" dita-ot:x="2" dita-ot:y="18">fr or fr-FR</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:19;90:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:37;91:20" colname="col1" dita-ot:x="1" dita-ot:y="19">French (Belgian)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:38;92:20" colname="col2" dita-ot:x="2" dita-ot:y="19">fr-BE</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:20;94:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:39;95:20" colname="col1" dita-ot:x="1" dita-ot:y="20">French (Canadian)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:40;96:20" colname="col2" dita-ot:x="2" dita-ot:y="20">fr-CA</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:21;98:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:41;99:20" colname="col1" dita-ot:x="1" dita-ot:y="21">French (Swiss)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:42;100:20" colname="col2" dita-ot:x="2" dita-ot:y="21">fr-CH</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:22;102:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:43;103:20" colname="col1" dita-ot:x="1" dita-ot:y="22">German</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:44;104:20" colname="col2" dita-ot:x="2" dita-ot:y="22">de or de-DE</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:23;106:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:45;107:20" colname="col1" dita-ot:x="1" dita-ot:y="23">German (Swiss)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:46;108:20" colname="col2" dita-ot:x="2" dita-ot:y="23">de-CH</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:24;110:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:47;111:20" colname="col1" dita-ot:x="1" dita-ot:y="24">Greek</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:48;112:20" colname="col2" dita-ot:x="2" dita-ot:y="24">el or el-GR</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:25;114:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:49;115:20" colname="col1" dita-ot:x="1" dita-ot:y="25">Hebrew</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:50;116:20" colname="col2" dita-ot:x="2" dita-ot:y="25">he or he-IL</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:26;118:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:51;119:20" colname="col1" dita-ot:x="1" dita-ot:y="26">Hindi</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:52;120:20" colname="col2" dita-ot:x="2" dita-ot:y="26">hi or hi-HI</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:27;122:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:53;123:20" colname="col1" dita-ot:x="1" dita-ot:y="27">Hungarian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:54;124:20" colname="col2" dita-ot:x="2" dita-ot:y="27">hu or hu-HU</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:28;126:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:55;127:20" colname="col1" dita-ot:x="1" dita-ot:y="28">Icelandic</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:56;128:20" colname="col2" dita-ot:x="2" dita-ot:y="28">is or is-IS</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:29;130:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:57;131:20" colname="col1" dita-ot:x="1" dita-ot:y="29">Indonesian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:58;132:20" colname="col2" dita-ot:x="2" dita-ot:y="29">id or id-ID</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:30;134:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:59;135:20" colname="col1" dita-ot:x="1" dita-ot:y="30">Italian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:60;136:20" colname="col2" dita-ot:x="2" dita-ot:y="30">it or it-IT</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:31;138:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:61;139:20" colname="col1" dita-ot:x="1" dita-ot:y="31">Italian (Swiss)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:62;140:20" colname="col2" dita-ot:x="2" dita-ot:y="31">it-CH</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:32;142:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:63;143:20" colname="col1" dita-ot:x="1" dita-ot:y="32">Japanese</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:64;144:20" colname="col2" dita-ot:x="2" dita-ot:y="32">ja or ja-JP</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:33;146:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:65;147:20" colname="col1" dita-ot:x="1" dita-ot:y="33">Kazakh</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:66;148:20" colname="col2" dita-ot:x="2" dita-ot:y="33">kk or kk-KZ</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:34;150:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:67;151:20" colname="col1" dita-ot:x="1" dita-ot:y="34">Korean</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:68;152:20" colname="col2" dita-ot:x="2" dita-ot:y="34">ko or ko-KR</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:35;154:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:69;155:20" colname="col1" dita-ot:x="1" dita-ot:y="35">Latvian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:70;156:20" colname="col2" dita-ot:x="2" dita-ot:y="35">lv or lv-LV</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:36;158:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:71;159:20" colname="col1" dita-ot:x="1" dita-ot:y="36">Lithuanian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:72;160:20" colname="col2" dita-ot:x="2" dita-ot:y="36">lt or lt-LT</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:37;162:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:73;163:20" colname="col1" dita-ot:x="1" dita-ot:y="37">Macedonian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:74;164:20" colname="col2" dita-ot:x="2" dita-ot:y="37">mk or mk-MK</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:38;166:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:75;167:20" colname="col1" dita-ot:x="1" dita-ot:y="38">Malay</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:76;168:20" colname="col2" dita-ot:x="2" dita-ot:y="38">ms or ms-MY</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:39;170:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:77;171:20" colname="col1" dita-ot:x="1" dita-ot:y="39">Norwegian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:78;172:20" colname="col2" dita-ot:x="2" dita-ot:y="39">no or no-NO</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:40;174:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:79;175:20" colname="col1" dita-ot:x="1" dita-ot:y="40">Polish</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:80;176:20" colname="col2" dita-ot:x="2" dita-ot:y="40">pl or pl-PL</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:41;178:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:81;179:20" colname="col1" dita-ot:x="1" dita-ot:y="41">Portuguese</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:82;180:20" colname="col2" dita-ot:x="2" dita-ot:y="41">pt or pt-PT</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:42;182:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:83;183:20" colname="col1" dita-ot:x="1" dita-ot:y="42">Portuguese (Brazil)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:84;184:20" colname="col2" dita-ot:x="2" dita-ot:y="42">pt-BR</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:43;186:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:85;187:20" colname="col1" dita-ot:x="1" dita-ot:y="43">Romanian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:86;188:20" colname="col2" dita-ot:x="2" dita-ot:y="43">ro or ro-RO</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:44;190:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:87;191:20" colname="col1" dita-ot:x="1" dita-ot:y="44">Russian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:88;192:20" colname="col2" dita-ot:x="2" dita-ot:y="44">ru or ru-RU</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:45;194:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:89;195:20" colname="col1" dita-ot:x="1" dita-ot:y="45">Serbian (Cyrillic script)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:90;196:20" colname="col2" dita-ot:x="2" dita-ot:y="45">sr, sr-RS, or sr-SP</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:46;198:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:91;199:20" colname="col1" dita-ot:x="1" dita-ot:y="46">Serbian (Latin script)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:92;200:20" colname="col2" dita-ot:x="2" dita-ot:y="46">sr-latn-RS</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:47;202:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:93;203:20" colname="col1" dita-ot:x="1" dita-ot:y="47">Slovak</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:94;204:20" colname="col2" dita-ot:x="2" dita-ot:y="47">sk or sk-SK</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:48;206:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:95;207:20" colname="col1" dita-ot:x="1" dita-ot:y="48">Slovenian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:96;208:20" colname="col2" dita-ot:x="2" dita-ot:y="48">sl or sl-SI</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:49;210:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:97;211:20" colname="col1" dita-ot:x="1" dita-ot:y="49">Spanish</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:98;212:20" colname="col2" dita-ot:x="2" dita-ot:y="49">es or es-ES</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:50;214:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:99;215:20" colname="col1" dita-ot:x="1" dita-ot:y="50">Spanish (Latin American)</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:100;216:20" colname="col2" dita-ot:x="2" dita-ot:y="50">es-419</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:51;218:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:101;219:20" colname="col1" dita-ot:x="1" dita-ot:y="51">Swedish</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:102;220:20" colname="col2" dita-ot:x="2" dita-ot:y="51">sv or sv-SE</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:52;222:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:103;223:20" colname="col1" dita-ot:x="1" dita-ot:y="52">Thai</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:104;224:20" colname="col2" dita-ot:x="2" dita-ot:y="52">th or th-TH</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:53;226:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:105;227:20" colname="col1" dita-ot:x="1" dita-ot:y="53">Turkish</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:106;228:20" colname="col2" dita-ot:x="2" dita-ot:y="53">tr or tr-TR</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:54;230:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:107;231:20" colname="col1" dita-ot:x="1" dita-ot:y="54">Ukrainian</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:108;232:20" colname="col2" dita-ot:x="2" dita-ot:y="54">uk or uk-UA</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:55;234:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:109;235:20" colname="col1" dita-ot:x="1" dita-ot:y="55">Urdu</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:110;236:20" colname="col2" dita-ot:x="2" dita-ot:y="55">ur or ur-PK</entry>
+          </row>
+          <row class="- topic/row " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="row:56;238:16">
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:111;239:20" colname="col1" dita-ot:x="1" dita-ot:y="56">Vietnamese</entry>
+            <entry class="- topic/entry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization-xhtml.dita" xtrc="entry:112;240:20" colname="col2" dita-ot:x="2" dita-ot:y="56">vi or vi-VN</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:3;9:106" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/globalizing.ditamap"><link class="- topic/link " format="dita" href="../user-guide/DITA-globalization.dita" mapclass="- map/topicref " role="parent" scope="local" type="task" xtrc="topicref:1;7:44" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/globalizing.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Globalizing DITA content</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The DITA standard supports content that is written in or translated to any language. In general, the DITA     Open Toolkit passes content through to the output format unchanged. The DITA-OT uses the values for the       <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;9:15" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization.dita">xml:lang</xmlatt>, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;9:42" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization.dita">translate</xmlatt>, and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;9:74" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization.dita">dir</xmlatt> attributes that are set in the     source content to provide globalization support.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:2;16:70" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><link class="- topic/link " format="dita" href="../dev_ref/plugin-addgeneratedtext.dita" mapclass="- map/topicref " role="friend" scope="local" type="reference" xtrc="topicref:1;9:66" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot usertext?>How to add support for new languages in HTML</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Generated text is the term for strings that are automatically added by the build, such as "Note" before the     contents of a &lt;note&gt; element.</desc></link></linkpool></related-links></reference>

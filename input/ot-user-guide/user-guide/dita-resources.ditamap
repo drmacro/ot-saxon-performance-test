@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Map//EN?><?doctype-system map.dtd?><map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (topic abbrev-d)                            (topic delay-d)                            a(props deliveryTarget)                            (map ditavalref-d)                            (map glossref-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- map/map " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="map:1;5:6" cascade="merge">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="title:1;6:10">DITA and DITA-OT resources</title>
+  <topicref href="dita-and-dita-ot-resources.dita" class="- map/topicref " navtitle="DITA Resources" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:1;7:94">
+    <topicref href="http://www.dita-ot.org/" class="- map/topicref " format="html" navtitle="Project website at dita-ot.org" scope="external" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:2;8:119">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicmeta:1;9:18">
+        <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="linktext:1;10:19">DITA-OT project website at dita-ot.org</linktext>
+        <shortdesc class="- map/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="shortdesc:1;11:20">The DITA-OT project website at dita-ot.org provides information about the latest toolkit releases,
+          including download links, release notes, and documentation for recent DITA-OT versions.</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref href="http://dita.xml.org/wiki/the-dita-open-toolkit" class="- map/topicref " format="html" navtitle="Project page at dita.xml.org" scope="external" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:3;16:64">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicmeta:2;17:18">
+        <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="linktext:2;18:19">DITA-OT project archive at dita.xml.org</linktext>
+        <shortdesc class="- map/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="shortdesc:2;19:20">The DITA-OT project archive at dita.xml.org provides news about earlier toolkit releases, and release
+          notes for all past releases.</shortdesc>
+      </topicmeta>
+    </topicref>
+    
+    <topicref href="http://groups.yahoo.com/group/dita-users/" class="- map/topicref " format="html" navtitle="Yahoo! dita-users group" scope="external" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:4;30:24">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicmeta:3;31:18">
+        <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="linktext:3;32:19">Yahoo! dita-users group</linktext>
+        <shortdesc class="- map/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="shortdesc:3;33:20">The original DITA list-serv is a vital resource for the DITA community. People post regularly, both asking for and
+          offering help. While the archived messages can be difficult to search, this is a treasure trove of
+          information.</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref href="https://groups.google.com/d/forum/dita-ot-users" class="- map/topicref " format="html" scope="external" navtitle="DITA-OT Users Google Group" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:5;39:45">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicmeta:4;40:18">
+        <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="linktext:4;41:19">DITA-OT Users Google Group</linktext>
+        <shortdesc class="- map/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="shortdesc:4;42:20">General interest DITA-OT product forum, for questions on any aspect of the toolkit - from
+          installation and getting started to questions about specific overrides, plug-ins, and
+          customizations.</shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref href="https://groups.google.com/d/forum/dita-ot-dev" class="- map/topicref " format="html" scope="external" navtitle="DITA-OT Development Google Group" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:6;48:51">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicmeta:5;49:18">
+        <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="linktext:5;50:19">DITA-OT Development Google Group</linktext>
+        <shortdesc class="- map/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="shortdesc:5;51:20">Forum for discussion related to DITA-OT development and design. Topics in this forum are more
+          technical in nature, covering upcoming design or code changes. </shortdesc>
+      </topicmeta>
+    </topicref>
+    <topicref href="http://www.oasis-open.org/committees/dita/" class="- map/topicref " format="html" navtitle="OASIS DITA Technical Committee " scope="external" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicref:7;56:24">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="topicmeta:6;57:18">
+        <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="linktext:6;58:19">Home page for the OASIS DITA Technical Committee</linktext>
+        <shortdesc class="- map/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/dita-resources.ditamap" xtrc="shortdesc:6;59:20">The OASIS DITA Technical Committee develops the DITA standard.</shortdesc>
+      </topicmeta>
+    </topicref>
+  </topicref>
+</map>

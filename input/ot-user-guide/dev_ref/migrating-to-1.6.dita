@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="ID" rev="1.6" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="reference:1;5:30">
+
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="title:1;7:10">Migrating to release 1.6</title>
+
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="shortdesc:1;9:14">In DITA-OT 1.6, various <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:1;9:48">demo</filepath> plug-ins were removed along with many deprecated
+    properties, targets, templates and modes. The PDF2 transformation no longer supports the beta version of DITA from
+    IBM, the "bkinfo" demo plug-in, or <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:2;11:50">layout-masters.xml</filepath> configuration.</shortdesc>
+
+  <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="refbody:1;13:12">
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="section:1;14:14">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:1;15:10">Support for the old DITAVAL format (used before OASIS added DITAVAL to the standard in 2007) has been
+        removed.</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:2;17:10">The <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:3;17:24">demo</filepath> folder has been deprecated and the following plug-ins have been moved to the
+          <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:4;18:21">plugins</filepath> folder:</p>
+      <simpletable class="- topic/simpletable " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="simpletable:1;19:20">
+        <sthead class="- topic/sthead " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="sthead:1;20:17">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:1;21:20">old path</stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:2;22:20">new path</stentry>
+        </sthead>
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:1;24:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:3;25:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:5;25:30">demo/dita11</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:4;26:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:6;26:30">plugins/org.dita.specialization.dita11</filepath></stentry>
+        </strow>
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:2;28:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:5;29:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:7;29:30">demo/dita132</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:6;30:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:8;30:30">plugins/org.dita.specialization.dita132</filepath></stentry>
+        </strow>
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:3;32:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:7;33:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:9;33:30">demo/eclipsemap</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:8;34:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:10;34:30">plugins/org.dita.specialization.eclipsemap</filepath></stentry>
+        </strow>
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:4;36:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:9;37:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:11;37:30">demo/fo</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:10;38:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:12;38:30">plugins/org.dita.pdf2</filepath></stentry>
+        </strow>
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:5;40:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:11;41:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:13;41:30">demo/tocjs</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:12;42:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:14;42:30">plugins/com.sophos.tocjs</filepath></stentry>
+        </strow>
+        
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:6;45:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:13;46:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:15;46:30">demo/h2d</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:14;47:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:16;47:30">plugins/h2d</filepath></stentry>
+        </strow>
+        <strow class="- topic/strow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="strow:7;49:16">
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:15;50:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:17;50:30">demo/legacypdf</filepath></stentry>
+          <stentry class="- topic/stentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="stentry:16;51:20"><filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:18;51:30">plugins/legacypdf</filepath></stentry>
+        </strow>
+      </simpletable>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:3;54:10">The remaining plug-ins in the demo folder have been moved to a separate repository at <xref href="https://github.com/dita-ot/ext-plugins" scope="external" format="html" class="- topic/xref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="xref:1;56:12"><?ditaot usertext?>github.com/dita-ot/ext-plugins</xref>.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="section:2;58:14">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:4;59:10">The deprecated property <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:1;59:42">dita.input.valfile</codeph> should be replaced with the new argument property
+          <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:2;60:19">args.filter</codeph>.</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:5;61:10">The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:3;61:22">dita-preprocess</codeph> target has been removed and dependencies should be replaced with a target
+        sequence <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:4;62:26">build-init, preprocess</codeph>.</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:6;63:10">Support for the <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:5;63:34">args.message.file</codeph> argument has been removed as message configuration has
+        become static configuration.</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:7;65:10">The <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:6;65:22">workdir</codeph> processing instruction has been deprecated in favor of
+          <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:7;66:19">workdir-uri</codeph>. The only difference between the two processing instructions is that
+          <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:8;67:19">workdir-uri</codeph> contains a URI instead of a system path.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="section:3;69:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="title:2;70:14">Preprocessing</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:8;71:10">The following deprecated templates and modes have been removed in topic pull stylesheets:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:1;72:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:1;73:13">inherit</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:2;74:13">get-stuff</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:3;75:13">verify-type-attribute</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:4;76:13">classval</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:5;77:13">getshortdesc</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:6;78:13">getlinktext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:7;79:13">blocktext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:8;80:13">figtext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:9;81:13">tabletext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:10;82:13">litext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:11;83:13">fntext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:12;84:13">dlentrytext</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:13;85:13">firstclass</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:14;86:13">invalid-list-item</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:15;87:13">xref</li>
+      </ul>
+    </section>
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="section:4;90:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="title:3;91:14">PDF2</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:9;92:10">The following deprecated items are no longer supported in the PDF transform:</p><ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:2;92:94">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:16;93:13">Support for the beta version of DITA, available from IBM before the OASIS standard was created in 2005.</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:17;94:13">Support for the "bkinfo" demo plug-in, used to support book metadata before OASIS created the BookMap format
+          in 2007.</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:18;96:13">Support for <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:19;96:35">layout-masters.xml</filepath> configuration. Plug-ins should use the
+            <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:9;97:21">createDefaultLayoutMasters</codeph> template instead.</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:10;99:10">The following extension-points have been added:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:3;100:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:19;101:13"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="codeph:10;101:21">dita.conductor.pdf2.param</codeph> to add XSLT parameters to XSL FO transformation.</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:11;103:10">Custom PDF2 shell stylesheets need to be revised to not include separate IBM and OASIS DITA stylesheets. The
+            <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="filepath:20;104:23"><varname class="+ topic/keyword sw-d/varname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="varname:1;104:32">*</varname>_1.0.xsl</filepath> stylesheets have been removed and their imports must be
+        removed from shell stylesheets.</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:12;106:10">The following template modes have been deprecated:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:4;107:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:20;108:13">toc-prefix-text</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:21;109:13">toc-topic-text</li>
+      </ul><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:13;110:15">The following named templates have been removed:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:5;111:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:22;112:13">processTopic</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:23;113:13">createMiniToc</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:24;114:13">processTopicTitle</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:25;115:13">createTopicAttrsName</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:26;116:13">processConcept</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:27;117:13">processReference</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:28;118:13">getTitle</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:29;119:13">placeNoteContent</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:30;120:13">placeImage</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:31;121:13">processUnknowType</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:32;122:13">insertReferenceTitle</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:33;123:13">buildRelationships</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:34;124:13">processTask</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:14;126:10">The main FO generation process now relies on the merging process to rewrite duplicate IDs. The default merging
+        process did this already in previous releases, but now also custom merging processes must fulfill the duplicate
+        ID rewrite requirement.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="section:5;130:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="title:4;131:14">XHTML</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:15;132:10">The following named templates have been deprecated:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:6;133:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:35;134:13">make-index-ref</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:16;136:10">The following deprecated templates have been removed:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:7;137:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:36;138:13">revblock-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:37;139:13">revstyle-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:38;140:13">start-revision-flag-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:39;141:13">end-revision-flag-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:40;142:13">concept-links</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:41;143:13">task-links</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:42;144:13">reference-links</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:43;145:13">relinfo-links</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:44;146:13">sort-links-by-role</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:45;147:13">create-links</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:46;148:13">add-linking-attributes</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:47;149:13">add-link-target-attribute</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:48;150:13">add-user-link-attributes</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:17;152:10">The removed templates have been replaced by other templates in earlier releases and plug-ins should be changed
+        to use the new templates.</p>
+    </section>
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="section:6;155:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="title:5;156:14">ODT</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:18;157:10">The following deprecated templates have been removed:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="ul:8;158:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:49;159:13">revblock-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:50;160:13">revstyle-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:51;161:13">start-revision-flag-deprecated</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="li:52;162:13">end-revision-flag-deprecated</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migrating-to-1.6.dita" xtrc="p:19;164:10">The removed templates have been replaced by other templates in earlier releases and plug-ins should be changed
+        to use the new templates.</p>
+    </section>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:9;16:63" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migration.ditamap"><link class="- topic/link " format="dita" href="../dev_ref/migration.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:1;7:51" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migration.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Migrating customizations</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">If you have XSL transformation overrides, plug-ins or other customizations written prior to DITA-OT       <keyword class="- topic/keyword " keyref="release" xtrc="keyword:1;8:34" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/migration.dita">2.3</keyword>, you may need to make changes to ensure your overrides work properly with the latest     toolkit versions. </desc></link></linkpool></related-links></reference>

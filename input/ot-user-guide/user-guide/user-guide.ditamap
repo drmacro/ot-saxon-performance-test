@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/user-guide/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Map//EN?><?doctype-system map.dtd?><map xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" xml:lang="en-US" ditaarch:DITAArchVersion="1.3" domains="(map mapgroup-d)                            (topic abbrev-d)                            (topic delay-d)                            a(props deliveryTarget)                            (map ditavalref-d)                            (map glossref-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- map/map " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/user-guide.ditamap" xtrc="map:1;5:23" cascade="merge">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/user-guide.ditamap" xtrc="title:1;6:10">User Guide</title>
+  <topicref href="transforming-dita-content.dita" class="- map/topicref " navtitle="Transforming DITA content" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:1;7:88">
+    <topicref href="using-dita-command.dita" class="- map/topicref " keys="build-using-dita-command" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:2;8:94">
+      <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicmeta:1;9:18">
+        <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="navtitle:1;10:19">Using the <cmdname class="+ topic/keyword sw-d/cmdname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="cmdname:1;10:38">dita</cmdname> command</navtitle>
+      </topicmeta>
+      <ditavalref href="../resources/expert.ditaval" class="+ map/topicref ditavalref-d/ditavalref " processing-role="resource-only" format="ditaval" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="ditavalref:1;12:54">
+        <ditavalmeta class="+ map/topicmeta ditavalref-d/ditavalmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="ditavalmeta:1;13:22">
+          <dvrResourcePrefix name="dvrResourcePrefix" class="+ topic/data ditavalref-d/dvrResourcePrefix " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="dvrResourcePrefix:1;14:30">build-</dvrResourcePrefix>
+        </ditavalmeta>
+      </ditavalref>
+      <topicref href="using-dita-properties-file.dita" class="- map/topicref " navtitle="Using a properties file" keys="using-dita-properties-file" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:3;18:44"/>
+      <topicref href="migrating-ant-to-dita.dita" class="- map/topicref " navtitle="Migrating Ant builds" keys="migrating-ant-to-dita" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:4;20:39"/>
+    </topicref>
+    <topicref href="publishing-with-ant.dita" class="- map/topicref " navtitle="Using Ant" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:5;22:84">
+      <topicref href="ant.dita" class="- map/topicref " navtitle="Ant overview" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:6;23:58"/>
+      <topicref href="building-with-ant.dita" class="- map/topicref " navtitle="Building output using Ant" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:7;24:85"/>
+      <topicref href="creating-an-ant-build-script.dita" class="- map/topicref " navtitle="Creating an Ant build script" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing.ditamap" xtrc="topicref:8;25:99"/>
+    </topicref>
+  </topicref>
+  <topicref href="AvailableTransforms.dita" class="- map/topicref " navtitle="Output formats" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:1;7:87">
+    <topicref href="dita2docbook.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:2;8:41"/>
+    <topicref href="dita2eclipsecontent.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:3;9:48"/>
+    <topicref href="dita2eclipsehelp.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:4;10:45"/>
+    <topicref href="dita2html5.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:5;11:39"/>
+    <topicref href="dita2htmlhelp.dita" class="- map/topicref " platform="windows" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:6;12:61"/>
+    <topicref href="dita2javahelp.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:7;13:42"/>
+    <topicref href="dita2odt.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:8;14:37"/>
+    <topicref href="dita2pdf.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:9;15:36">
+      <topicref href="pdf2-creating-change-bars.dita" class="- map/topicref " keys="pdf2-creating-change-bars" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:10;16:89"/>
+    </topicref>
+    <topicref href="dita2wordrtf.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:11;18:41"/>
+    <topicref href="dita2tocjs.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:12;19:39"/>
+    <topicref href="dita2troff.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:13;20:39"/>
+    <topicref href="dita2xhtml.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/transformations.ditamap" xtrc="topicref:14;21:39"/>
+  </topicref>
+  <topicref href="DITA_spec-support.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/spec-support.ditamap" xtrc="topicref:1;7:43">
+    <topicref href="DITA_v1-2-support.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/spec-support.ditamap" xtrc="topicref:2;8:46"/>
+    <topicref href="DITA_v1-3-support.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/spec-support.ditamap" xtrc="topicref:3;9:46"/>
+    <topicref href="implementation-dependent-features.dita" class="- map/topicref " navtitle="Feature implementation" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/spec-support.ditamap" xtrc="topicref:4;10:112"/>
+    <topicref href="extended-functionality.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/spec-support.ditamap" xtrc="topicref:5;11:51"/>
+  </topicref>
+  <topicref href="DITA-globalization.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/globalizing.ditamap" xtrc="topicref:1;7:44">
+    <topicref href="globalization-supported-in-dita-ot.dita" class="- map/topicref " navtitle="Globalization support" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/globalizing.ditamap" xtrc="topicref:2;8:112"/>
+    <topicref href="DITA-globalization-xhtml.dita" class="- map/topicref " navtitle="Supported languages: HTML" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/globalizing.ditamap" xtrc="topicref:3;9:106"/>
+    <topicref href="DITA-globalization-pdf.dita" class="- map/topicref " navtitle="Supported languages: PDF" locktitle="yes" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/globalizing.ditamap" xtrc="topicref:4;10:103"/>
+  </topicref>
+  <topicref href="troubleshooting-overview.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:1;7:50">
+    <topicref href="prerequisite-software.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:2;8:50"/>
+    <topicref href="DITA-messages.xml" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:3;9:40">
+      <topicref href="DITA-messages-details.xml" class="- map/topicref " processing-role="resource-only" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:4;10:83"/>
+    </topicref>
+    <topicref href="other-errors.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:5;12:41"/>
+    <topicref href="log-files.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:6;13:38"/>
+    <topicref href="dita-command-help.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:7;14:46"/>
+    <topicref href="determining-version-of-ditaot.dita" class="- map/topicref " navtitle="Determining version of the DITA OT" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:8;15:104"/>
+    <topicref href="enabling-debug-mode.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:9;16:48"/>
+    <topicref href="increasing-the-jvm.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:10;17:47"/>
+    <topicref href="reducing-processing-time.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/troubleshooting.ditamap" xtrc="topicref:11;18:53"/>
+  </topicref>
+<reltable toc="no" class="- map/reltable " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="reltable:1;6:13">
+    <relheader class="- map/relheader " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relheader:1;7:16">
+      <relcolspec toc="no" class="- map/relcolspec " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcolspec:1;8:19"/>
+      <relcolspec toc="no" class="- map/relcolspec " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcolspec:2;10:19"/>
+      <relcolspec linking="targetonly" toc="no" class="- map/relcolspec " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcolspec:3;13:10"/>
+    </relheader>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:1;17:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:1;18:16">
+        <topicref class="- map/topicref " keyref="build-using-dita-command" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:1;19:54"/>
+      </relcell>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:2;21:16">
+        <topicref class="- map/topicref " keyref="dita-command-arguments" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:2;22:52"/>
+      </relcell>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:3;24:16">
+        <topicref class="- map/topicref " keyref="dita-ot-params" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:3;25:44"/>
+        <topicref class="- map/topicref " keyref="internal-ant-properties" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:4;26:53"/>
+      </relcell>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:2;29:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:4;30:16">
+        <topicref class="- map/topicref " keyref="first-build-using-dita-command" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:5;31:60"/>
+      </relcell>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:5;33:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:6;34:16">
+        <topicref class="- map/topicref " keyref="build-using-dita-command" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:6;35:53">
+          <topicmeta class="- map/topicmeta " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicmeta:1;36:22">
+            <linktext class="- map/linktext " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="linktext:1;37:23">More information about building output with the <cmdname class="+ topic/keyword sw-d/cmdname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="cmdname:1;37:80">dita</cmdname> command</linktext>
+          </topicmeta>
+        </topicref>
+      </relcell>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:3;42:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:7;43:16">
+        <topicref class="- map/topicref " keyref="dita-command-arguments" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:7;44:52"/>
+        <topicref class="- map/topicref " keyref="dita-ot-params" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:8;45:44"/>
+      </relcell>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:8;47:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:9;48:16">
+        <topicref class="- map/topicref " keyref="using-dita-properties-file" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:9;49:56"/>
+      </relcell>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:4;52:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:10;53:16">
+        <topicref href="publishing-with-ant.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:10;54:52"/>
+        <topicref href="ant.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:11;55:36"/>
+        <topicref href="building-with-ant.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:12;56:50"/>
+        <topicref href="creating-an-ant-build-script.dita" class="- map/topicref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:13;57:61"/>
+      </relcell>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:11;59:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:12;60:16">
+        <topicref class="- map/topicref " keyref="migrating-ant-to-dita" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="topicref:14;61:51"/>
+      </relcell>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:5;64:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:13;65:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:14;66:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:15;67:17"/>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:6;69:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:16;70:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:17;71:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:18;72:17"/>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:7;74:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:19;75:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:20;76:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:21;77:17"/>
+    </relrow>
+    <relrow class="- map/relrow " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relrow:8;79:13">
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:22;80:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:23;81:17"/>
+      <relcell toc="no" class="- map/relcell " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/publishing-reltables.ditamap" xtrc="relcell:24;82:17"/>
+    </relrow>
+  </reltable></map>

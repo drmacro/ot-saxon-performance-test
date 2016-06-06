@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/parameters?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/parameters/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="ant-parameters-details" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:1;5:40">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:1;6:10">Ant parameter details</title>
+
+  <related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:15;22:92" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/reference.ditamap"><link class="- topic/link " format="dita" href="../parameters/parameters_intro.dita" mapclass="- map/topicref " role="parent" scope="local" type="reference" xtrc="topicref:2;8:64" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/reference.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>DITA-OT parameters</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">Certain parameters apply to all DITA-OT transformations. Other parameters are common to the HTML-based     transformations. Finally, some parameters apply only to specific transformation types. These parameters can be     passed as options to the <cmdname class="+ topic/keyword sw-d/cmdname " xtrc="cmdname:1;10:39" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/parameters_intro.dita">dita</cmdname> command using the <option class="+ topic/keyword pr-d/option " xtrc="option:1;10:80" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/parameters_intro.dita">-Dparameter-name=value</option> syntax or     included in build scripts as Ant properties.</desc></link></linkpool></related-links><reference id="base" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:2;8:24">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:2;9:12">All transformations</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:1;10:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:1;11:17">All transformations</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:1;13:85">Certain parameters apply to all
+      transformations that are supported by the DITA Open Toolkit.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:1;15:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:1;16:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:1;17:16">
+          
+          <plentry id="args.draft" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:1;24:36">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:1;25:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:1;26:25">args.draft</parmname>
+            </pt>
+            
+            <pd audience="xslt-customizer" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:2;29:66">Corresponds to the XSLT parameter
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:2;30:27">DRAFT</parmname> in most XSLT modules.<note type="tip" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:1;30:82">For PDF output, setting the
+                  <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:3;31:29">args.draft</parmname> parameter to <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:1;31:72">yes</option> causes the contents of the
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:1;32:31">titlealts</xmlelement> element to be rendered below the title.</note>
+            </pd>
+          </plentry>
+          <plentry id="args.figurelink.style" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:2;35:47">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:2;36:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:4;37:25">args.figurelink.style</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:4;40:39">Specifying <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:2;40:58">NUMBER</option> results in "Figure 5"; specifying
+                <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:3;41:25">TITLE</option> results in the title of the figure. <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:1;41:107">Corresponds to
+                the XSLT parameter <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:5;42:46">FIGURELINK</parmname>.</ph><note rev="2.0" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:2;42:89">Support for PDF was added in
+                DITA-OT 2.0. By default PDF uses the value <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:4;43:68">NUMTITLE</option>, which is not supported for other
+                transformation types; this results in "Figure 5. Title".</note></pd>
+          </plentry>
+          
+          <plentry id="args.grammar.cache" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:3;51:44">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:3;52:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:6;53:25">args.grammar.cache</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:6;56:39">
+              <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:3;57:21">This option dramatically speeds up processing time. However, there is a known problem with using
+                this feature for documents that use XML entities. If your build fails with parser errors about entity
+                resolution, set this parameter to <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:5;59:59">no</option>.</note>
+            </pd>
+          </plentry>
+          <plentry id="args.input" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:4;62:36">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:4;63:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:7;64:25">args.input</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:8;67:39">Typically this is a DITA map, however it also can be a DITA topic if you want to
+              transform a single DITA file. The path can be absolute, relative to <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:8;68:93">args.input.dir</parmname>,
+              or relative to the directory where your project's ant build script resides if
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:9;70:27">args.input.dir</parmname> is not defined. </pd>
+          </plentry>
+          <plentry id="args.input.dir" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:5;72:40">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:5;73:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:10;74:25">args.input.dir</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:10;77:39">The default value is the parent directory of the file specified by
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:11;78:27">args.input</parmname>.</pd>
+          </plentry>
+          
+          
+          <plentry id="args.tablelink.style" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:6;89:46">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:6;90:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:12;91:25">args.tablelink.style</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:12;94:39">Specifying <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:6;94:58">NUMBER</option> results in "Table 5"; specifying
+                <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:7;95:25">TITLE</option> results in the title of the table. <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:2;95:106">Corresponds to
+                the XSLT parameter <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:13;96:46">TABLELINK</parmname>.</ph><note rev="2.0" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:4;96:88">Support for PDF was added in
+                DITA-OT 2.0. By default PDF uses the value <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:8;97:68">NUMTITLE</option>, which is not supported for other
+                transformation types; this results in "Table 5. Title".</note></pd>
+          </plentry>
+          <plentry id="cleantemp" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:7;100:35">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:7;101:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:14;102:25">clean.temp</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:14;105:40"/>
+          </plentry>
+          
+          <plentry id="dita.temp.dir" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:8;112:39">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:8;113:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:15;114:25">dita.temp.dir</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:16;117:39">The temporary directory is where the DITA-OT writes temporary files that are
+              generated during the transformation process.</pd>
+          </plentry>
+          <plentry id="dita.input.valfile" importance="deprecated" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:9;120:68">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:9;121:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:16;122:25">dita.input.valfile</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:18;125:39">
+              <note type="notice" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:5;126:35">Deprecated in favor of the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:17;126:72">args.filter</parmname> parameter.</note>
+            </pd>
+          </plentry>
+          <plentry id="filter-stage" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:10;129:38">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:10;130:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:18;131:25">filter-stage</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:20;134:39">
+              <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:6;135:21">Changing the filtering stage may produce different results for the same initial data set and
+                filtering conditions.</note>
+            </pd>
+          </plentry>
+          <plentry id="force-unique" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:11;139:38">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:11;140:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:19;141:25">force-unique</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:22;144:39">
+              <draft-comment author="jelovirt" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="draft-comment:1;145:48">This needs a better and longer description.</draft-comment>
+            </pd>
+          </plentry>
+          <plentry id="generate-debug-attributes" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:12;148:51">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:12;149:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:20;150:25">generate-debug-attributes</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:24;153:39">
+              <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:7;154:21">Disabling debugging attributes reduces the size of temporary files and thus reduces memory
+                consumption. However, the log messages no longer have the source information available and thus the
+                ability to debug problems might deteriorate.</note>
+            </pd>
+          </plentry>
+          <plentry id="generate.copy.outer" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:13;159:45">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:13;160:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:21;161:25">generate.copy.outer</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:26;164:39">
+              <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="p:1;165:18">See <xref href="generate-copy-outer.dita" class="- topic/xref " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xref:1;165:61" type="concept"><?ditaot gentext?>generate.copy.outer parameter<?ditaot genshortdesc?><desc class="- topic/desc ">Elaboration on how the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/generate-copy-outer.dita" xtrc="parmname:2;7:47">generate.copy.outer</parmname> parameter functions.</desc></xref> for more information.</p>
+            </pd>
+          </plentry>
+          <plentry id="onlytopic.in.map" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:14;168:42">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:14;169:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:22;170:25">onlytopic.in.map</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:28;173:39">If set to <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:9;173:57">true</option>, only files that are referenced directly from the
+              map will generate output; the default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:10;174:70">false</option>.</pd>
+          </plentry>
+          <plentry id="outer.control" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:15;176:39">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:15;177:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:23;178:25">outer.control</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:30;181:39">
+              <note type="warning" platform="windows" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:8;182:55">Microsoft HTML Help Compiler cannot produce HTML Help for
+                documentation projects that use outer content. The content files must reside in or below the directory
+                containing the master DITA map file, and the map file cannot specify ".." at the start of the
+                  <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlatt:1;185:27">href</xmlatt> attributes for <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:2;185:68">topicref</xmlelement> elements.</note>
+            </pd>
+          </plentry>
+          <plentry id="output.dir" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:16;188:36">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:16;189:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:24;190:25">output.dir</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:32;193:39">By default, the output is written to
+                <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="filepath:1;194:27"><varname class="+ topic/keyword sw-d/varname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="varname:1;194:36">DITA-dir</varname>/out</filepath>.</pd>
+          </plentry>
+          
+          
+          <plentry id="transtype" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:17;206:35">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:17;207:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:25;208:25">transtype</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:34;211:39">You can create plug-ins to add new values for this parameter; by default, the
+              following values are available:
+              <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ul:1;213:19">
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:1;214:21">docbook</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:2;215:21">eclipsehelp</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:3;216:21">eclipsecontent</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:4;217:21">html5</li>
+                <li platform="windows" class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:5;218:40">htmlhelp</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:6;219:21">javahelp</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:7;220:21">odt</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:8;221:21">pdf</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:9;222:21">wordrtf</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:10;223:21">troff</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:11;224:21">xhtml</li>
+              </ul>
+            </pd>
+          </plentry>
+          
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="base-html" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:3;239:29">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:3;240:12">HTML-based output formats</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:2;241:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:2;242:17">All HTML-based transformations</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:2;244:95">Certain parameters apply
+      to all the HTML-based transformation types: Eclipse help, HTML Help, JavaHelp, TocJS, HTML5, and XHTML. </shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:2;246:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:2;247:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:2;248:16">
+          
+          <plentry id="args.breadcrumbs" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:18;256:42">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:18;257:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:26;258:25">args.breadcrumbs</parmname>
+            </pt>
+            
+            <pd audience="xslt-customizer" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:36;261:66">Corresponds to the XSLT parameter
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:27;262:27">BREADCRUMBS</parmname>.</pd>
+          </plentry>
+          
+          
+          <plentry id="args.csspath" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:19;274:38">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:19;275:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:28;276:25">args.csspath</parmname>
+            </pt>
+            
+            <pd audience="xslt-customizer" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:38;279:66">Corresponds to the XSLT parameter
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:29;280:27">CSSPATH</parmname>. DITA-OT will copy the file to this location.</pd>
+          </plentry>
+          <plentry id="args.cssroot" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:20;282:38">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:20;283:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:30;284:25">args.cssroot</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:40;287:39">DITA-OT will copy the file from this location.</pd>
+          </plentry>
+          <plentry id="args.dita.locale" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:21;289:42">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:21;290:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:31;291:25">args.dita.locale</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:42;294:39">
+              <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:9;295:21">This parameter is not available for the XHTML transformation.</note>
+            </pd>
+          </plentry>
+          <plentry id="args.ftr" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:22;298:34">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:22;299:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:32;300:25">args.ftr</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:44;303:39">
+              <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:3;304:46">Corresponds to the XSLT parameter <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:33;304:90">FTR</parmname>.</ph>
+              <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:10;305:21">The footer file should be specified using an absolute path and must contain valid XML. A common
+                practice is to place all content into a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:3;306:69">div</xmlelement> element.</note>
+            </pd>
+          </plentry>
+          <plentry id="args.gen.default.meta" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:23;309:47">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:23;310:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:34;311:25">args.gen.default.meta</parmname>
+            </pt>
+            
+            <pd audience="xslt-customizer" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:46;314:66">Corresponds to the XSLT parameter
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:35;315:27">genDefMeta</parmname>.</pd>
+          </plentry>
+          <plentry class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="plentry:2;16:43">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pt:2;17:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="parmname:2;17:27">args.gen.task.lbl</parmname></pt>
+            <pd id="d27e39" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pd:2;18:45">Specifies whether to generate headings for sections within task topics. The
+              allowed values are <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:1;19:42">YES</option> and <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:2;19:67">NO</option>; the default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:3;19:109">NO</option>.
+                <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="ph:1;20:48">Corresponds to the XSLT parameter
+                  <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="parmname:3;21:29">GENERATE-TASK-LABELS</parmname>.</ph></pd>
+          </plentry>
+          <plentry id="args.hdf" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:25;321:34">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:25;322:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:36;322:27">args.hdf</parmname></pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:49;324:39">
+              <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="p:2;325:18">The contents of the header file will be inserted in the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:4;325:86">head</xmlelement> element of the
+                generated HTML files.</p>
+              <note type="tip" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:11;327:32">The header file should be specified using an absolute path and must contain valid XML. If
+                you need to insert more than one element into the HTML page head, wrap the content in a
+                  <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:5;329:31">div</xmlelement> element. The division wrapper in the header file will be discarded when
+                generating HTML files, and the contents will be inserted into each page head.</note></pd>
+          </plentry>
+          <plentry id="args.hdr" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:26;332:34">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:26;333:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:37;334:25">args.hdr</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:51;337:39">
+              <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:4;338:46">Corresponds to the XSLT parameter <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:38;338:90">HDR</parmname>.</ph>
+              <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:12;339:21">The header file should be specified using an absolute path and must contain valid XML. A common
+                practice is to place all content into a <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:6;340:69">div</xmlelement> element.</note>
+            </pd>
+          </plentry>
+          <plentry id="args.hide.parent.link" importance="deprecated" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:27;343:71">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:27;344:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:39;345:25">args.hide.parent.link</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:53;348:39">
+              <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:5;349:46">Corresponds to the XSLT parameter <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:40;349:90">NOPARENTLINK</parmname>.</ph>
+              <note type="notice" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:13;350:35">This parameter is deprecated in favor of the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:41;350:90">args.rellinks</parmname>
+                parameter.</note>
+            </pd>
+          </plentry>
+          
+          <plentry id="args.outext" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:28;361:37">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:28;362:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:42;363:25">args.outext</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:55;366:39">
+              <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:6;367:46">Corresponds to the XSLT parameter <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:43;367:90">OUTEXT</parmname>.</ph>
+            </pd>
+          </plentry>
+          <plentry id="args.xhtml.classattr" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:29;370:46">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:29;371:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:44;372:25">args.xhtml.classattr</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:57;375:39">For example, the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:7;375:68">prereq</xmlelement> element (which is specialized
+              from <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:8;376:32">section</xmlelement>) would generate <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="codeph:1;376:77">class="section prereq</codeph>. The allowed
+              values are <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:11;377:34">yes</option> and <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:12;377:59">no</option>; the default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:13;377:101">yes</option>. <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:7;378:44">Corresponds to the XSLT parameter
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:45;379:27">PRESERVE-DITA-CLASS</parmname>.</ph><note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:14;379:69">Beginning with DITA OT release 1.5.2, the default
+                value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:14;380:34">yes</option>. For release 1.5 and 1.5.1, the default value was <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:15;380:105">no</option>.
+              </note></pd>
+          </plentry>
+          <plentry id="args.xsl" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:30;383:34">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:30;384:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:46;385:25">args.xsl</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:59;388:39">The parameter must specify a fully qualified file name.</pd>
+          </plentry>
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="eclipsecontent" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:4;395:34">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:4;396:12">Eclipse content</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:3;397:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:3;398:17">Eclipse content</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:3;400:105">Certain
+      parameters are specific to the Eclipse content transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:3;402:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:3;403:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:3;404:16">
+          <plentry id="args.eclipsecontent.toc" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:31;405:49">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:31;406:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:47;407:25">args.eclipsecontent.toc</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:61;410:39">
+              <note type="tip" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:15;411:32">The toolkit ignores the value of this property when processing an Eclipse Collection Map,
+                eclipse.dtd.</note>
+            </pd>
+          </plentry>
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="eclipsehelp" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:5;420:31">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:5;421:12">Eclipse help</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:4;422:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:4;423:17">Eclipse help</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:4;425:99">Certain parameters are
+      specific to the Eclipse help transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:4;427:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:4;428:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:4;429:16">
+          
+          <plentry id="args.eclipsehelp.country" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:32;435:50">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:32;436:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:48;437:25">args.eclipsehelp.country</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:63;440:39">For example, <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:16;440:60">us</option>, <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:17;440:81">ca</option>, and <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:18;440:106">gb</option>
+              would clarify a value of <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:19;441:48">en</option> set for the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:49;441:82">args.eclipsehelp.language</parmname>
+              parameter. The content will be moved into the appropriate directory structure for an Eclipse
+                fragment.<draft-comment author="Kristen James Eberlein" time="11 August 2012" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="draft-comment:2;443:95">What does "The content
+                will be moved into the appropriate directory structure for an Eclipse fragment"
+              mean?</draft-comment></pd>
+          </plentry>
+          <plentry id="args.eclipsehelp.language" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:33;447:51">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:33;448:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:50;449:25">args.eclipsehelp.language</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:65;452:39">This parameter is a prerequisite for the
+                <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:51;453:27">args.eclipsehelp.country</parmname> parameter. The content will be moved into the appropriate
+              directory structure for an Eclipse fragment.</pd>
+          </plentry>
+          <plentry id="args.eclipse.provider" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:34;456:47">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:34;457:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:52;458:25">args.eclipse.provider</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:67;461:39">The default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:20;461:68">DITA</option>. <note type="tip" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:16;461:100">The toolkit ignores
+                the value of this parameter when it processes an Eclipse map.</note>
+            </pd>
+          </plentry>
+          <plentry id="args.eclipse.version" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:35;465:46">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:35;466:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:53;467:25">args.eclipse.version</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:69;470:39">The default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:21;470:68">0.0.0</option>.<note type="tip" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:17;470:100">The toolkit ignores
+                the value of this parameter when it processes an Eclipse map.</note></pd>
+          </plentry>
+          <plentry id="args.eclipse.symbolic.name" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:36;473:52">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:36;474:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:54;475:25">args.eclipse.symbolic.name</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:71;478:39">
+              The
+                <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlatt:2;480:25">id</xmlatt> value from the DITA map or the Eclipse map collection (Eclipse help specialization)
+              is the symbolic name for the plugin in Eclipse. The default value is
+                <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:22;482:25">org.sample.help.doc</option>.<note type="tip" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:18;482:71">The toolkit ignores the value of this parameter
+                when it processes an Eclipse map.</note><draft-comment author="Kristen James Eberlein" time="11 August 2012" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="draft-comment:3;484:39">I'm not clear what this means. Is the default value for the
+                  <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:55;485:29">args.eclipse.symbolic.name</parmname> parameter the value of the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlatt:3;485:102">id</xmlatt>
+                attribute on the <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:9;486:46">map</xmlelement> or <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlelement:10;486:78">plugin</xmlelement> element, if provided,
+                and the <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:23;487:33">org.sample.help.doc</option> if there is not a value for the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="xmlatt:4;487:102">id</xmlatt>
+                attribute or the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:56;488:44">args.eclipse.symbolic.name</parmname> parameter?</draft-comment></pd>
+          </plentry>
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="htmlhelp" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:6;495:28">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:6;496:12">HTML Help</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:5;497:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:5;498:17">HTML Help</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:5;500:93">Certain parameters are
+      specific to the HTML Help transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:5;502:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:5;503:16">
+        
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="javahelp" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:7;515:28">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:7;516:12">JavaHelp</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:6;517:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:6;518:17">JavaHelp</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:6;520:93">Certain parameters are
+      specific to the JavaHelp transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:6;522:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:6;523:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:5;524:16">
+          <plentry id="args.javahelp.map" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:37;525:43">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:37;526:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:57;527:25">args.javahelp.map</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:73;530:39">
+              <draft-comment author="Kristen James Eberlein" time="11 August 2012" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="draft-comment:4;531:84">What does this mean? How does this
+                differ from the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:58;532:43">args.input</parmname> parameter? Or should this read "Specifies the name of
+                the JavaHelp map file?</draft-comment>
+            </pd>
+          </plentry>
+          <plentry id="args.javahelp.toc" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:38;536:43">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:38;537:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:59;538:25">args.javahelp.toc</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:75;541:39">Default value is the name of the ditamap file for your project. <draft-comment author="Kristen James Eberlein" time="11 August 2012" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="draft-comment:5;542:71">I assume that the first sentence means "Specifies
+                the name of the JavaHelp TOC file." But what does the second sentence mean? That the default value for
+                the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:60;544:31">args.javahelp.toc</parmname> parameter is the name of the master DITA map? Or that the
+                default value for the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:61;545:49">args.javahelp.toc</parmname> parameter is the value of the
+                  <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:62;546:29">args.javahelp.map</parmname> parameter?</draft-comment></pd>
+          </plentry>
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="odt" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:8;553:23">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:8;554:12">ODT</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:7;555:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:7;556:17">ODT</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:7;558:83">Certain parameters are specific to the
+      ODT transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:7;560:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:7;561:16">
+        
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="ant-parameters-other" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:9;574:40">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:9;575:12">Other parameters</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:8;576:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:8;577:17">Other</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:8;579:16">These parameters enable you to reload style sheets that the DITA-OT uses for specific pre-processing
+      stages.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:8;581:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:8;582:16">
+        <draft-comment author="Kristen James Eberlein" time="11 August 2012" translate="no" class="- topic/draft-comment " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="draft-comment:6;583:78">I've made no attempt to work with the
+          content in the topic. Here's what I'd like to know:
+          <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ul:2;585:15">
+            <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="li:12;586:17">When would someone want to use the various <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:63;586:70">dita.preprocess</parmname> parameters? (Other than
+              if they need to reduce Java memory consumption.) The use cases are not clear from the current
+              description.</li>
+          </ul>
+        </draft-comment>
+        
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="pdf" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:10;623:23">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:10;624:12">PDF</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:9;625:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:9;626:17">PDF</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:9;628:83">Certain parameters are specific to the
+      PDF transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:9;630:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:9;631:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:6;632:16">
+          
+          
+          
+          <plentry class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="plentry:1;12:44">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pt:1;13:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="parmname:1;13:27">args.fo.userconfig</parmname></pt>
+            <pd id="d27e29" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pd:1;14:46">Specifies the user configuration file for FOP.</pd>
+          </plentry>
+          <plentry class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="plentry:2;16:43">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pt:2;17:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="parmname:2;17:27">args.gen.task.lbl</parmname></pt>
+            <pd id="d27e39" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pd:2;18:45">Specifies whether to generate headings for sections within task topics. The
+              allowed values are <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:1;19:42">YES</option> and <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:2;19:67">NO</option>; the default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:3;19:109">NO</option>.
+                <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="ph:1;20:48">Corresponds to the XSLT parameter
+                  <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="parmname:3;21:29">GENERATE-TASK-LABELS</parmname>.</ph></pd>
+          </plentry>
+          <plentry class="+ topic/dlentry pr-d/plentry " rev="1.6" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="plentry:3;23:49">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pt:3;24:17"><parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="parmname:4;24:27">args.rellinks</parmname></pt>
+            <pd id="d27e63" class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="pd:3;25:41">
+              <p id="d27e65" class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="p:1;26:41">Specifies which links to include in the output. The following values are
+                supported:</p>
+              <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="ul:1;28:19">
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="li:1;29:21"><option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:4;29:29">none</option> – No links are included.</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="li:2;30:21"><option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:5;30:29">all</option> – All links are included.</li>
+                <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="li:3;31:21"><option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="option:6;31:29">nofamily</option> – Parent, child, next, and previous links are not included.</li>
+              </ul>
+              <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/conref-dita-ot-parameters.dita" xtrc="p:2;33:18">Default value depends on the transformation type.</p>
+            </pd>
+          </plentry>
+          <plentry id="args.xsl.pdf" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:42;665:38">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:42;666:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:64;667:25">args.xsl.pdf</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:80;670:39">You must specify the fully qualified file name.</pd>
+          </plentry>
+          
+          
+          <plentry id="pdf.formatter" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:43;681:39">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:43;682:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:65;683:25">pdf.formatter</parmname>
+            </pt>
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:81;685:17">The client package comes with Apache FOP; other XSL processors must be separately installed.</pd>
+          </plentry>
+          <plentry id="publish.required.cleanup" importance="deprecated" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:44;687:74">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:44;688:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:66;689:25">publish.required.cleanup</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:83;692:39">The default value is the value of the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:67;692:87">args.draft</parmname> parameter.
+                <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:8;693:48">Corresponds to the XSLT parameter
+                  <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:68;694:29">publishRequiredCleanup</parmname>.</ph><note type="notice" class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="note:19;694:88">This parameter is deprecated in
+                favor of the <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:69;695:40">args.draft</parmname> parameter.</note></pd>
+          </plentry>
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="common-html" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:11;702:31">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:11;703:12">HTML5 and XHTML</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:10;704:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:10;705:17">HTML5 and XHTML</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:10;707:99">Certain parameters are
+      specific to the HTML5 and XHTML transformations.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:10;709:14">
+      <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="section:10;710:16">
+        <parml class="+ topic/dl pr-d/parml " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parml:7;711:16">
+          <plentry id="args.xhtml.contenttarget" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:45;712:50">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:45;713:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:70;714:25">args.xhtml.contenttarget</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:85;717:39">The default value is <option class="+ topic/keyword pr-d/option " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="option:24;717:68">contentwin</option>.</pd>
+          </plentry>
+          
+          <plentry id="args.xhtml.toc.class" class="+ topic/dlentry pr-d/plentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="plentry:46;725:46">
+            <pt class="+ topic/dt pr-d/pt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pt:46;726:17">
+              <parmname class="+ topic/keyword pr-d/parmname " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="parmname:71;727:25">args.xhtml.toc.class</parmname>
+            </pt>
+            
+            <pd class="+ topic/dd pr-d/pd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="pd:87;730:39">
+              <ph audience="xslt-customizer" class="- topic/ph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="ph:9;731:46">Found in <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="filepath:2;731:65">map2htmltoc.xsl</filepath>.</ph>
+            </pd>
+          </plentry>
+        </parml>
+      </section>
+    </refbody>
+  </reference>
+
+  <reference id="html5" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="reference:12;739:25">
+    <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="title:12;740:12">HTML5 parameters</title>
+    <titlealts class="- topic/titlealts " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="titlealts:11;741:16">
+      <navtitle class="- topic/navtitle " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="navtitle:11;742:17">HTML5</navtitle>
+    </titlealts>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="shortdesc:11;744:87">Certain parameters are specific to
+      the HTML5 transformation.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/parameters/ant-parameters-details.dita" xtrc="refbody:11;746:14">
+      
+    </refbody>
+  </reference>
+</reference>

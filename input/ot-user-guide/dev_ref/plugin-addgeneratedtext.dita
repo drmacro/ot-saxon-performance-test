@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="plugin-addgeneratedtext" xml:lang="en-US" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="reference:1;5:58">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="title:1;6:10">Modifying or adding generated text</title>
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="shortdesc:1;7:14">Generated text is the term for strings that are automatically added by the build, such as "Note" before the
+    contents of a &lt;note&gt; element.</shortdesc>
+  <refbody class="- topic/body        reference/refbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="refbody:1;9:12">
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="section:1;10:14">
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:1;11:10">The generated text extension point is used to add new strings to the default set of generated text. There are
+        several reasons you may want to use this:<ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="ul:1;12:54">
+          <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="li:1;13:15">It can be used to add new text for your own processing extensions; for example, it could be used to add
+            localized versions of the string "User response" to aid in rendering troubleshooting information.</li>
+          <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="li:2;15:15">It can be used to override the default strings in the toolkit; for example, it could be used to reset the
+            English string "Figure" to "Fig".</li>
+          <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="li:3;17:15">It can be used to add support for new languages (for non-PDF transforms only; PDF requires more
+            complicated localization support). For example, it could be used to add support for Vietnamese or Gaelic; it
+            could also be used to support a new variant of a previously supported language, such as Australian
+            English.</li>
+        </ul></p><dl class="- topic/dl " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="dl:1;21:22">
+        <dlentry class="- topic/dlentry " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="dlentry:1;22:18">
+          <dt class="- topic/dt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="dt:1;23:15"><codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeph:1;23:23">dita.xsl.strings</codeph></dt>
+          <dd class="- topic/dd " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="dd:1;24:15">Add new strings to generated text file. </dd>
+        </dlentry>
+      </dl>
+    </section>
+    <example class="- topic/example " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="example:1;28:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="title:2;29:14">Example: adding new strings</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:2;30:10">First copy the file <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:1;30:40">xsl/common/strings.xml</filepath> to your plug-in, and edit it to contain the
+        languages that you are providing translations for ("en-US" must be present). For this sample, copy the file into
+        your plug-in as <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:2;32:35">xsl/my-new-strings.xml</filepath>. The new strings file will look something like
+        this:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeblock:1;33:29">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Provide strings for my plug-in; this plug-in supports
+     English, Icelandic, and Russian. --&gt;
+&lt;langlist&gt;
+  &lt;lang xml:lang="en"     filename="mystring-en-us.xml"/&gt;
+  &lt;lang xml:lang="en-US"  filename="mystring-en-us.xml"/&gt;
+  &lt;lang xml:lang="is"     filename="mystring-is-is.xml"/&gt;
+  &lt;lang xml:lang="is-IS"  filename="mystring-is-is.xml"/&gt;
+  &lt;lang xml:lang="ru"     filename="mystring-ru-ru.xml"/&gt;
+  &lt;lang xml:lang="ru-RU"  filename="mystring-ru-ru.xml"/&gt;
+&lt;/langlist&gt;</codeblock><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:3;43:30">Next,
+        copy the file <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:3;44:33">xsl/common/strings-en-us.xml</filepath> to your plug-in, and replace the content with
+        your own strings (be sure to give them unique name attributes). Do the same for each language that you are
+        providing a translation for. For example, the file <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:4;46:70">mystring-en-us.xml</filepath> might
+        contain:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeblock:2;47:32">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;strings xml:lang="en-US"&gt;
+  &lt;str name="String1"&gt;English generated text&lt;/str&gt;
+  &lt;str name="Another String"&gt;Another String in English&lt;/str&gt;
+&lt;/strings&gt;</codeblock><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:4;51:29">Use
+        the following extension code to include your strings in the set of generated text:
+        </p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeblock:3;53:24">&lt;plugin id="com.example.strings"&gt;
+  &lt;feature extension="dita.xsl.strings" file="xsl/my-new-strings.xml"/&gt;
+&lt;/plugin&gt;</codeblock><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:5;55:28">The
+        string is now available to the "getString" template used in many DITA-OT XSLT files. For example, if processing
+        in a context where the xml:lang value is "en-US", the following call would return "Another String in
+        English":</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeblock:4;58:33">&lt;xsl:call-template name="getString"&gt;
+  &lt;xsl:with-param name="stringName" select="'Another String'"/&gt;
+&lt;/xsl:call-template&gt;
+</codeblock>
+      <note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="note:1;62:13">If two plug-ins define the same string, the results will be non-deterministic, so multiple plug-ins should
+        not try to create the same generated text string. One common way to avoid this problem is to ensure the name
+        attributes used to look up the string value are related to the ID or purpose of your plug-in.</note>
+    </example>
+    <example class="- topic/example " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="example:2;66:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="title:3;67:14">Example: modifying existing strings</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:6;68:10">The process for modifying existing generated text is exactly the same as for adding new text, except that the
+        strings you provide override values that already exist. To begin, set up the
+          <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:5;70:21">xsl/my-new-strings.xml</filepath> file in your plug-in as in the previous example. </p><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:7;70:111">Next, copy
+        the file <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:6;71:28">xsl/common/strings-en-us.xml</filepath> to your plug-in, and choose the strings you wish to
+        change (be sure to leave the name attribute unchanged, because this is the key used to look up the string).
+        Create a strings file for each language that needs to modify existing strings. For example, the new file
+          <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:7;74:21">mystring-en-us.xml</filepath> might
+        contain:</p><codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeblock:5;75:32">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;strings xml:lang="en-US"&gt;
+  &lt;str name="Figure"&gt;Fig&lt;/str&gt;
+  &lt;str name="Draft comment"&gt;ADDRESS THIS DRAFT COMMENT&lt;/str&gt;
+&lt;/strings&gt;</codeblock><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:8;79:29">To
+        integrate the new strings, use the same method as above to add these strings to your
+          <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:8;81:21">plugin.xml</filepath> file. Once this plug-in is integrated, where XHTML output previously generated
+        the term "Figure", it will now generate "Fig"; where it previously generated "Draft comment", it will now
+        generate "ADDRESS THIS DRAFT COMMENT". The same strings in other languages will not be modified unless you also
+        provide new versions for those languages.</p><note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="note:2;84:60">If two plug-ins override the same string in the same
+        language, the results will be non-deterministic (either string may be used under different conditions). Multiple
+        plug-ins should not override the same generated text string for a single language.</note>
+    </example>
+    <example class="- topic/example " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="example:3;88:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="title:4;89:14">Example: adding a new language</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:9;90:10">The process for adding a new language is exactly the same as for adding new text, except you are effectively
+        just translating an existing strings file. To begin, set up the <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:9;91:83">xsl/my-new-strings.xml</filepath> file
+        in your plug-in as in the previous examples. In this case, the only difference is that you are adding a mapping
+        to new languages; for example, the following file would be used to set up support for
+        Vietnamese:<codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeblock:6;94:31">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Map languages with xml:lang="vi" or xml:lang="vi-vn"
+     to the translations in this plug-in. --&gt;
+&lt;langlist&gt;
+  &lt;lang xml:lang="vi"     filename="strings-vi.xml"/&gt;
+  &lt;lang xml:lang="vi-VN"  filename="strings-vi.xml"/&gt;
+&lt;/langlist&gt;</codeblock></p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:10;101:10">Next, copy the file <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:10;101:40">xsl/common/strings-en-us.xml</filepath> to your plug-in, and rename it to match
+        the language you wish to add. For example, to support Vietnamese strings you may want to pick a name like
+          <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:11;103:21">strings-vi.xml</filepath>. In that file, change the <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="xmlatt:1;103:81">xml:lang</xmlatt> attribute on the root
+        element to match your new language.</p><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:11;104:51">Once the file is ready, translate the contents of each
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="xmlelement:1;105:23">str</xmlelement> element (be sure to leave the name attribute unchanged). Repeat this process for
+        each new language you wish to add.</p><p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="p:12;106:50">To integrate the new languages, use the same method as above to add
+        these strings to your <filepath class="+ topic/ph sw-d/filepath " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="filepath:12;107:41">plugin.xml</filepath> file. Once this plug-in is integrated, non-PDF builds will
+        include support for Vietnamese; instead of generating the English word "Caution", the element <codeph class="+ topic/ph pr-d/codeph " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="codeph:2;108:111">&lt;note
+          type="caution" xml:lang="vi"&gt;</codeph> may generate something like "<term xml:lang="vi" class="- topic/term " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="term:1;109:99">chú
+        ý</term>".</p><note class="- topic/note " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plugin-addgeneratedtext.dita" xtrc="note:3;110:29">If two plug-ins add support for the same language using different values, the results will
+        be non-deterministic (translations from either plug-in may be picked up under different conditions).</note>
+    </example>
+  </refbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:12;19:52" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plug-ins.ditamap"><link class="- topic/link " format="dita" href="../dev_ref/plugin-creating.dita" mapclass="- map/topicref " role="parent" scope="local" type="task" xtrc="topicref:1;7:41" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/plug-ins.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Creating plug-ins</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You can use DITA-OT plug-ins to extend the DITA Open Toolkit.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:1;9:66" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><link class="- topic/link " format="dita" href="../user-guide/DITA-globalization-xhtml.dita" mapclass="- map/topicref " role="friend" scope="local" type="reference" xtrc="topicref:2;16:70" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot usertext?>Languages supported by the core toolkit</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The DITA Open Toolkit supports over 50 languages and language variants for the HTML-based transformations     such as HTML5, XHTML, Eclipse Help, HTML Help, and TocJS.</desc></link></linkpool><linkpool class="- topic/linkpool " xtrc="topicref:49;231:67" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><link class="- topic/link " format="dita" href="../user-guide/DITA-globalization.dita" mapclass="- map/topicref " role="friend" scope="local" type="task" xtrc="topicref:47;222:65" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/resources/reltable.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Globalizing DITA content</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">The DITA standard supports content that is written in or translated to any language. In general, the DITA     Open Toolkit passes content through to the output format unchanged. The DITA-OT uses the values for the       <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:1;9:15" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization.dita">xml:lang</xmlatt>, <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:2;9:42" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization.dita">translate</xmlatt>, and <xmlatt class="+ topic/keyword markup-d/markupname xml-d/xmlatt " xtrc="xmlatt:3;9:74" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/user-guide/DITA-globalization.dita">dir</xmlatt> attributes that are set in the     source content to provide globalization support.</desc></link></linkpool></related-links></reference>

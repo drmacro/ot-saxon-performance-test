@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref?><?workdir-uri file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/temp/xhtml/dev_ref/?><?path2project ../?><?path2project-uri ../?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="types-pdf-customization-plugins" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="concept:1;5:47">
+  <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="title:1;6:10">Types of custom PDF plug-ins</title>
+  <shortdesc class="- topic/shortdesc " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="shortdesc:1;7:14">There are two common types of plug-ins: A plug-in that simply sets the DITA-OT parameters to be used when a
+    PDF is generated, and a plug-in that overrides aspects of the base DITA-OT PDF transformation. A plug-in can, of
+    course, do both of these things.</shortdesc>
+  <conbody class="- topic/body  concept/conbody " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="conbody:1;10:12">
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="section:1;11:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="title:2;12:14">Plug-in that only provides DITA-OT parameters</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="p:1;13:10">You might want to build a transformation type that uses a transformation as-is; however, you might want ensure
+        that certain DITA-OT parameters are used. For example, consider the following scenario:</p>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="p:2;15:10">You want to ensure that PDFs generated for internal review have the following characteristics:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="ul:1;16:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="li:1;17:13">Use company style sheets</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="li:2;18:13">Make draft comments visible to the reviewers, as they contain queries from the information developers</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="li:3;19:13">Print the file names of the graphics underneath figures, so that graphic artists can more quickly respond to
+          requested changes</li>
+      </ul>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="p:3;22:10">To accomplish this, you can create a new plug-in. In the Ant script that defines the transformation type,
+        specify the DITA-OT parameters. For example, to render draft comments and art labels, add
+          <xmlelement class="+ topic/keyword markup-d/markupname xml-d/xmlelement " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="xmlelement:1;24:23">property</xmlelement> elements to specify the DITA-OT parameters:</p>
+      <codeblock xml:space="preserve" class="+ topic/pre pr-d/codeblock " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="codeblock:1;25:18">&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;project name="com.example.draft.pdf"&gt;
+  &lt;target name="dita2draft.pdf.init"&gt;
+    &lt;property name="customization.dir" location="${dita.plugin.com.example.draft.pdf.dir}/cfg"/&gt;
+    <b class="+ topic/ph hi-d/b " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="b:1;29:8">&lt;property name="args.draft" value="yes"/&gt;</b>
+    <b class="+ topic/ph hi-d/b " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="b:2;30:8">&lt;property name="args.artlbl" value="yes"/&gt;</b>
+  &lt;/target&gt;
+  &lt;target name="dita2draft.pdf" depends="dita2draft.pdf.init, dita2production.pdf,dita2pdf2"/&gt;
+&lt;/project&gt;</codeblock>
+    </section>
+    <section class="- topic/section " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="section:2;35:14">
+      <title class="- topic/title " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="title:3;36:14">Plug-in that overrides the base PDF transformation</title>
+      <p class="- topic/p " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="p:4;37:10">Production uses of the DITA-OT typically rely on a custom PDF plug-in to render PDFs that are styled to
+        match corporate or organizational guidelines. Such customization plug-ins often override the following aspects
+        of the DITA-OT's default output:</p>
+      <ul class="- topic/ul " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="ul:2;40:11">
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="li:4;41:13">Generated text strings</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="li:5;42:13">XSL templates</li>
+        <li class="- topic/li " xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization-plugin-types.dita" xtrc="li:6;43:13">XSL-FO attribute sets</li>
+      </ul>
+    </section>
+  </conbody>
+<related-links class="- topic/related-links "><linkpool class="- topic/linkpool " xtrc="topicref:4;10:59" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization.ditamap"><link class="- topic/link " format="dita" href="../dev_ref/pdf-customization.dita" mapclass="- map/topicref " role="parent" scope="local" type="task" xtrc="topicref:1;7:43" xtrf="file:/Users/ekimber/workspace-ditaot/dita-ot-2.x/src/main/docsrc/dev_ref/pdf-customization.ditamap"><?ditaot usertext?><linktext class="- topic/linktext "><?ditaot gentext?>Customizing PDF output</linktext><?ditaot genshortdesc?><desc class="- topic/desc ">You can create custom DITA-OT plug-ins that build on the default DITA to PDF transformation. Plug-ins can     customize covers and page layouts, modify formatting, override logic of the default PDF plug-in, and much     more.</desc></link></linkpool></related-links></concept>
