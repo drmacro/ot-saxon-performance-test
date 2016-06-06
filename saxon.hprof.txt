@@ -1,0 +1,391 @@
+JAVA PROFILE 1.0.1, created Mon Jun  6 10:44:32 2016
+
+Copyright (c) 2003, 2005, Oracle and/or its affiliates. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+  - Neither the name of Oracle nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Header for -agentlib:hprof (or -Xrunhprof) ASCII Output (JDK 5.0 JVMTI based)
+
+WARNING!  This file format is under development, and is subject to
+change without notice.
+
+This file contains the following types of records:
+
+THREAD START
+THREAD END      mark the lifetime of Java threads
+
+TRACE           represents a Java stack trace.  Each trace consists
+                of a series of stack frames.  Other records refer to
+                TRACEs to identify (1) where object allocations have
+                taken place, (2) the frames in which GC roots were
+                found, and (3) frequently executed methods.
+
+HEAP DUMP       is a complete snapshot of all live objects in the Java
+                heap.  Following distinctions are made:
+
+                ROOT    root set as determined by GC
+                CLS     classes 
+                OBJ     instances
+                ARR     arrays
+
+SITES           is a sorted list of allocation sites.  This identifies
+                the most heavily allocated object types, and the TRACE
+                at which those allocations occurred.
+
+CPU SAMPLES     is a statistical profile of program execution.  The VM
+                periodically samples all running threads, and assigns
+                a quantum to active TRACEs in those threads.  Entries
+                in this record are TRACEs ranked by the percentage of
+                total quanta they consumed; top-ranked TRACEs are
+                typically hot spots in the program.
+
+CPU TIME        is a profile of program execution obtained by measuring
+                the time spent in individual methods (excluding the time
+                spent in callees), as well as by counting the number of
+                times each method is called. Entries in this record are
+                TRACEs ranked by the percentage of total CPU time. The
+                "count" field indicates the number of times each TRACE 
+                is invoked.
+
+MONITOR TIME    is a profile of monitor contention obtained by measuring
+                the time spent by a thread waiting to enter a monitor.
+                Entries in this record are TRACEs ranked by the percentage
+                of total monitor contention time and a brief description
+                of the monitor.  The "count" field indicates the number of 
+                times the monitor was contended at that TRACE.
+
+MONITOR DUMP    is a complete snapshot of all the monitors and threads in 
+                the System.
+
+HEAP DUMP, SITES, CPU SAMPLES|TIME and MONITOR DUMP|TIME records are generated 
+at program exit.  They can also be obtained during program execution by typing 
+Ctrl-\ (on Solaris) or by typing Ctrl-Break (on Win32).
+
+--------
+
+THREAD START (obj=5000018f, id = 200001, name="main", group="main")
+THREAD END (id = 200001)
+THREAD START (obj=5000018f, id = 200004, name="DestroyJavaVM", group="main")
+THREAD END (id = 200004)
+TRACE 300080:
+	java.util.zip.ZipFile.read(ZipFile.java:Unknown line)
+	java.util.zip.ZipFile.access$1400(ZipFile.java:60)
+	java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:716)
+	sun.misc.Resource.getBytes(Resource.java:124)
+TRACE 300241:
+	java.io.UnixFileSystem.getBooleanAttributes0(UnixFileSystem.java:Unknown line)
+	java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:242)
+	java.io.File.exists(File.java:819)
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1245)
+TRACE 300073:
+	java.lang.ClassLoader.defineClass1(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
+TRACE 300078:
+	java.lang.ClassLoader.findLoadedClass0(ClassLoader.java:Unknown line)
+	java.lang.ClassLoader.findLoadedClass(ClassLoader.java:1035)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:406)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+TRACE 300326:
+	net.sf.saxon.sort.IntRangeSet.add(IntRangeSet.java:136)
+	net.sf.saxon.charcode.XMLCharacterData.getCategory(XMLCharacterData.java:756)
+	net.sf.saxon.java.JDK15RegexTranslator.makeNameCharClass(JDK15RegexTranslator.java:516)
+	net.sf.saxon.java.JDK15RegexTranslator.<clinit>(JDK15RegexTranslator.java:102)
+TRACE 300140:
+	java.lang.ClassLoader.getBootstrapResources(ClassLoader.java:1273)
+	java.lang.ClassLoader.getResources(ClassLoader.java:1137)
+	java.util.ServiceLoader$LazyIterator.hasNextService(ServiceLoader.java:348)
+	java.util.ServiceLoader$LazyIterator.hasNext(ServiceLoader.java:393)
+TRACE 300328:
+	net.sf.saxon.expr.ExpressionParser.makeNameCode(ExpressionParser.java:2231)
+	net.sf.saxon.expr.ExpressionParser.makeNameTest(ExpressionParser.java:2342)
+	net.sf.saxon.expr.ExpressionParser.parseNodeTest(ExpressionParser.java:1438)
+	net.sf.saxon.expr.ExpressionParser.parseBasicStep(ExpressionParser.java:1344)
+TRACE 300038:
+	java.nio.DirectByteBuffer.asLongBuffer(DirectByteBuffer.java:835)
+	sun.misc.PerfCounter.<init>(PerfCounter.java:67)
+	sun.misc.PerfCounter.newPerfCounter(PerfCounter.java:71)
+	sun.misc.PerfCounter$CoreCounters.<clinit>(PerfCounter.java:128)
+TRACE 300309:
+	java.lang.ClassLoader.loadClass(ClassLoader.java:436)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:411)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+TRACE 300310:
+	net.sf.saxon.event.StartTagBuffer.declareNamespacesForStartElement(StartTagBuffer.java:226)
+	net.sf.saxon.event.StartTagBuffer.startContent(StartTagBuffer.java:211)
+	net.sf.saxon.event.ProxyReceiver.startContent(ProxyReceiver.java:166)
+	net.sf.saxon.event.ProxyReceiver.startContent(ProxyReceiver.java:166)
+TRACE 300311:
+	net.sf.saxon.tree.TreeBuilder.attribute(TreeBuilder.java:195)
+	net.sf.saxon.style.UseWhenFilter.attribute(UseWhenFilter.java:149)
+	net.sf.saxon.event.StartTagBuffer.startContent(StartTagBuffer.java:215)
+	net.sf.saxon.event.ProxyReceiver.startContent(ProxyReceiver.java:166)
+TRACE 300312:
+	net.sf.saxon.style.StyleNodeFactory.makeXSLElement(StyleNodeFactory.java:313)
+	net.sf.saxon.style.StyleNodeFactory.makeElementNode(StyleNodeFactory.java:87)
+	net.sf.saxon.tree.TreeBuilder.startContent(TreeBuilder.java:211)
+	net.sf.saxon.style.UseWhenFilter.startContent(UseWhenFilter.java:163)
+TRACE 300335:
+	net.sf.saxon.expr.ExpressionParser.parseFilters(ExpressionParser.java:2195)
+	net.sf.saxon.expr.ExpressionParser.parsePatternStep(ExpressionParser.java:2182)
+	net.sf.saxon.expr.ExpressionParser.parsePathPattern(ExpressionParser.java:2045)
+	net.sf.saxon.expr.ExpressionParser.parseUnionPattern(ExpressionParser.java:1978)
+TRACE 300336:
+	java.lang.String.intern(String.java:Unknown line)
+	net.sf.saxon.expr.Tokenizer.lookAhead(Tokenizer.java:722)
+	net.sf.saxon.expr.Tokenizer.next(Tokenizer.java:225)
+	net.sf.saxon.expr.ExpressionParser.nextToken(ExpressionParser.java:96)
+TRACE 300337:
+	net.sf.saxon.style.XSLOutput.prepareAttributes(XSLOutput.java:60)
+	net.sf.saxon.style.StyleElement.processAttributes(StyleElement.java:396)
+	net.sf.saxon.style.StyleElement.processAllAttributes(StyleElement.java:359)
+	net.sf.saxon.style.XSLStylesheet.processAllAttributes(XSLStylesheet.java:961)
+TRACE 300313:
+	com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar(XMLEntityScanner.java:1467)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2615)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+TRACE 300282:
+	java.util.regex.Pattern.charPropertyNodeFor(Pattern.java:2779)
+	java.util.regex.Pattern.family(Pattern.java:2736)
+	java.util.regex.Pattern.sequence(Pattern.java:2076)
+	java.util.regex.Pattern.expr(Pattern.java:1996)
+TRACE 300179:
+	com.sun.org.apache.xerces.internal.utils.XMLSecurityManager.getSystemProperty(XMLSecurityManager.java:507)
+	com.sun.org.apache.xerces.internal.utils.XMLSecurityManager.readSystemProperties(XMLSecurityManager.java:486)
+	com.sun.org.apache.xerces.internal.utils.XMLSecurityManager.<init>(XMLSecurityManager.java:201)
+	com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.<init>(SAXParserImpl.java:132)
+TRACE 300342:
+	net.sf.saxon.expr.GeneralComparison.typeCheck(GeneralComparison.java:183)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+	net.sf.saxon.style.StyleElement.typeCheck(StyleElement.java:1012)
+	net.sf.saxon.style.XSLWhen.validate(XSLWhen.java:68)
+TRACE 300343:
+	net.sf.saxon.expr.ExpressionTool.resolveCallsToCurrentFunction(ExpressionTool.java:740)
+	net.sf.saxon.style.StyleElement.typeCheck(StyleElement.java:1013)
+	net.sf.saxon.style.XSLApplyTemplates.validate(XSLApplyTemplates.java:118)
+	net.sf.saxon.style.StyleElement.validateSubtree(StyleElement.java:1233)
+TRACE 300344:
+	net.sf.saxon.expr.FilterExpression.typeCheck(FilterExpression.java:179)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+	net.sf.saxon.expr.PathExpression.typeCheck(PathExpression.java:247)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+TRACE 300345:
+	net.sf.saxon.sort.GenericAtomicComparer.makeAtomicComparer(GenericAtomicComparer.java:56)
+	net.sf.saxon.expr.ValueComparison.typeCheck(ValueComparison.java:225)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+	net.sf.saxon.expr.GeneralComparison.typeCheck(GeneralComparison.java:199)
+TRACE 300257:
+	net.sf.saxon.om.StandardNames.<clinit>(StandardNames.java:537)
+	net.sf.saxon.om.NamePool.allocate(NamePool.java:501)
+	net.sf.saxon.style.UseWhenFilter.open(UseWhenFilter.java:53)
+	net.sf.saxon.event.ProxyReceiver.open(ProxyReceiver.java:80)
+TRACE 300318:
+	sun.reflect.ClassFileAssembler.emitConstantPoolUTF8(ClassFileAssembler.java:103)
+	sun.reflect.MethodAccessorGenerator.generate(MethodAccessorGenerator.java:287)
+	sun.reflect.MethodAccessorGenerator.generateMethod(MethodAccessorGenerator.java:75)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:53)
+TRACE 300087:
+	sun.misc.URLClassPath$FileLoader.getResource(URLClassPath.java:1223)
+	sun.misc.URLClassPath.getResource(URLClassPath.java:212)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:365)
+	java.net.URLClassLoader$1.run(URLClassLoader.java:362)
+TRACE 300349:
+	net.sf.saxon.style.StyleElement.allocateLocationId(StyleElement.java:1599)
+	net.sf.saxon.style.StyleElement.compileSequenceConstructor(StyleElement.java:1434)
+	net.sf.saxon.style.XSLFunction.compileAsExpression(XSLFunction.java:244)
+	net.sf.saxon.style.XSLFunction.compile(XSLFunction.java:227)
+TRACE 300350:
+	net.sf.saxon.instruct.GeneralVariable.getSelectExpression(GeneralVariable.java:72)
+	net.sf.saxon.instruct.WithParam.simplify(WithParam.java:53)
+	net.sf.saxon.instruct.ApplyTemplates.simplify(ApplyTemplates.java:102)
+	net.sf.saxon.expr.ExpressionVisitor.simplify(ExpressionVisitor.java:159)
+TRACE 300351:
+	net.sf.saxon.instruct.FixedAttribute.<init>(FixedAttribute.java:42)
+	net.sf.saxon.style.XSLAttribute.compile(XSLAttribute.java:214)
+	net.sf.saxon.style.StyleElement.compileSequenceConstructor(StyleElement.java:1500)
+	net.sf.saxon.style.XSLIf.compile(XSLIf.java:108)
+TRACE 300352:
+	net.sf.saxon.expr.QuantifiedExpression.hasLoopingSubexpression(QuantifiedExpression.java:184)
+	net.sf.saxon.expr.ExpressionVisitor.isLoopingSubexpression(ExpressionVisitor.java:237)
+	net.sf.saxon.expr.VariableReference.typeCheck(VariableReference.java:161)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+TRACE 300353:
+	net.sf.saxon.instruct.GeneralVariable.checkAgainstRequiredType(GeneralVariable.java:311)
+	net.sf.saxon.instruct.GeneralVariable.typeCheck(GeneralVariable.java:267)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+	net.sf.saxon.instruct.Block.typeCheck(Block.java:447)
+TRACE 300354:
+	java.lang.Object.getClass(Object.java:Unknown line)
+	java.util.Arrays.copyOf(Arrays.java:3181)
+	java.util.ArrayList.grow(ArrayList.java:261)
+	java.util.ArrayList.ensureExplicitCapacity(ArrayList.java:235)
+TRACE 300355:
+	net.sf.saxon.instruct.Choose.optimize(Choose.java:321)
+	net.sf.saxon.expr.ExpressionVisitor.optimize(ExpressionVisitor.java:200)
+	net.sf.saxon.instruct.ParentNodeConstructor.optimize(ParentNodeConstructor.java:186)
+	net.sf.saxon.expr.ExpressionVisitor.optimize(ExpressionVisitor.java:200)
+TRACE 300356:
+	net.sf.saxon.expr.QuantifiedExpression.typeCheck(QuantifiedExpression.java:73)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+	net.sf.saxon.expr.GeneralComparison.optimize(GeneralComparison.java:431)
+	net.sf.saxon.expr.ExpressionVisitor.optimize(ExpressionVisitor.java:200)
+TRACE 300081:
+	java.lang.Thread.currentThread(Thread.java:Unknown line)
+	java.lang.Thread.interrupted(Thread.java:944)
+	sun.misc.Resource.getBytes(Resource.java:96)
+	java.net.URLClassLoader.defineClass(URLClassLoader.java:462)
+TRACE 300358:
+	net.sf.saxon.instruct.SimpleContentConstructor.typeCheck(SimpleContentConstructor.java:128)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+	net.sf.saxon.instruct.SimpleNodeConstructor.typeCheck(SimpleNodeConstructor.java:116)
+	net.sf.saxon.expr.ExpressionVisitor.typeCheck(ExpressionVisitor.java:181)
+TRACE 300359:
+	net.sf.saxon.tinytree.TinyBuilder.startDocument(TinyBuilder.java:126)
+	net.sf.saxon.event.ReceivingContentHandler.startDocument(ReceivingContentHandler.java:204)
+	com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startDocument(AbstractSAXParser.java:292)
+	com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startDocument(XMLDTDValidator.java:636)
+TRACE 300360:
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+TRACE 300361:
+	java.lang.String.replace(String.java:2072)
+	net.sf.saxon.charcode.CharacterSetFactory.makeCharacterSet(CharacterSetFactory.java:54)
+	net.sf.saxon.charcode.CharacterSetFactory.getCharacterSet(CharacterSetFactory.java:43)
+	net.sf.saxon.event.Emitter.setOutputProperties(Emitter.java:97)
+TRACE 300362:
+	java.util.Arrays.sort(Arrays.java:144)
+	net.sf.saxon.expr.Expression.getSlotsUsed(Expression.java:932)
+	net.sf.saxon.value.Closure.saveContext(Closure.java:110)
+	net.sf.saxon.value.SingletonClosure.<init>(SingletonClosure.java:42)
+TRACE 300363:
+	net.sf.saxon.value.AtomicValue.convert(AtomicValue.java:233)
+	net.sf.saxon.expr.UntypedAtomicConverter.evaluateItem(UntypedAtomicConverter.java:178)
+	net.sf.saxon.functions.Contains.evaluateItem(Contains.java:37)
+	net.sf.saxon.expr.Expression.iterate(Expression.java:370)
+TRACE 300364:
+	net.sf.saxon.pattern.NodeKindTest.matches(NodeKindTest.java:91)
+	net.sf.saxon.pattern.LocationPathPattern.internalMatches(LocationPathPattern.java:440)
+	net.sf.saxon.pattern.LocationPathPattern.matches(LocationPathPattern.java:428)
+	net.sf.saxon.trans.Mode.getRule(Mode.java:280)
+TRACE 300365:
+	net.sf.saxon.pattern.NodeKindTest.matches(NodeKindTest.java:64)
+	net.sf.saxon.tinytree.AttributeEnumeration.moveNext(AttributeEnumeration.java:59)
+	net.sf.saxon.tinytree.AttributeEnumeration.next(AttributeEnumeration.java:80)
+	net.sf.saxon.instruct.BlockIterator.next(BlockIterator.java:44)
+TRACE 300366:
+	net.sf.saxon.instruct.ApplyTemplates.applyTemplates(ApplyTemplates.java:321)
+	net.sf.saxon.instruct.ApplyTemplates.apply(ApplyTemplates.java:210)
+	net.sf.saxon.instruct.ApplyTemplates.process(ApplyTemplates.java:170)
+	net.sf.saxon.instruct.ElementCreator.processLeavingTail(ElementCreator.java:296)
+TRACE 300367:
+	net.sf.saxon.expr.ContextMappingIterator.next(ContextMappingIterator.java:54)
+	net.sf.saxon.value.SequenceExtent.<init>(SequenceExtent.java:98)
+	net.sf.saxon.sort.DocumentOrderIterator.<init>(DocumentOrderIterator.java:30)
+	net.sf.saxon.sort.DocumentSorter.iterate(DocumentSorter.java:85)
+TRACE 300368:
+	net.sf.saxon.tinytree.TinyNodeImpl.getDisplayName(TinyNodeImpl.java:338)
+	net.sf.saxon.instruct.Copy.processLeavingTail(Copy.java:233)
+	net.sf.saxon.instruct.Template.applyLeavingTail(Template.java:203)
+	net.sf.saxon.instruct.ApplyTemplates.applyTemplates(ApplyTemplates.java:345)
+TRACE 300369:
+	net.sf.saxon.Transform.processFile(Transform.java:1127)
+	net.sf.saxon.Transform.doTransform(Transform.java:719)
+	net.sf.saxon.Transform.main(Transform.java:66)
+TRACE 300082:
+	java.lang.ClassLoader.loadClass(ClassLoader.java:415)
+	sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	java.lang.Class.forName0(Class.java:Unknown line)
+TRACE 300204:
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.<init>(XMLDocumentFragmentScannerImpl.java:287)
+	com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.<init>(XMLDocumentScannerImpl.java:239)
+	com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.<init>(XMLNSDocumentScannerImpl.java:64)
+	com.sun.org.apache.xerces.internal.parsers.XML11Configuration.<init>(XML11Configuration.java:562)
+TRACE 300098:
+	net.sf.saxon.value.DateTimeValue.<init>(DateTimeValue.java:465)
+	net.sf.saxon.value.DateTimeValue.<clinit>(DateTimeValue.java:107)
+	net.sf.saxon.style.UseWhenFilter.<init>(UseWhenFilter.java:36)
+	net.sf.saxon.PreparedStylesheet.loadStylesheetModule(PreparedStylesheet.java:208)
+CPU SAMPLES BEGIN (total = 59) Mon Jun  6 10:44:33 2016
+rank   self  accum   count trace method
+   1 15.25% 15.25%       9 300080 java.util.zip.ZipFile.read
+   2  3.39% 18.64%       2 300241 java.io.UnixFileSystem.getBooleanAttributes0
+   3  3.39% 22.03%       2 300073 java.lang.ClassLoader.defineClass1
+   4  1.69% 23.73%       1 300078 java.lang.ClassLoader.findLoadedClass0
+   5  1.69% 25.42%       1 300326 net.sf.saxon.sort.IntRangeSet.add
+   6  1.69% 27.12%       1 300140 java.lang.ClassLoader.getBootstrapResources
+   7  1.69% 28.81%       1 300328 net.sf.saxon.expr.ExpressionParser.makeNameCode
+   8  1.69% 30.51%       1 300038 java.nio.DirectByteBuffer.asLongBuffer
+   9  1.69% 32.20%       1 300309 java.lang.ClassLoader.loadClass
+  10  1.69% 33.90%       1 300310 net.sf.saxon.event.StartTagBuffer.declareNamespacesForStartElement
+  11  1.69% 35.59%       1 300311 net.sf.saxon.tree.TreeBuilder.attribute
+  12  1.69% 37.29%       1 300312 net.sf.saxon.style.StyleNodeFactory.makeXSLElement
+  13  1.69% 38.98%       1 300335 net.sf.saxon.expr.ExpressionParser.parseFilters
+  14  1.69% 40.68%       1 300336 java.lang.String.intern
+  15  1.69% 42.37%       1 300337 net.sf.saxon.style.XSLOutput.prepareAttributes
+  16  1.69% 44.07%       1 300313 com.sun.org.apache.xerces.internal.impl.XMLEntityScanner.skipChar
+  17  1.69% 45.76%       1 300282 java.util.regex.Pattern.charPropertyNodeFor
+  18  1.69% 47.46%       1 300179 com.sun.org.apache.xerces.internal.utils.XMLSecurityManager.getSystemProperty
+  19  1.69% 49.15%       1 300342 net.sf.saxon.expr.GeneralComparison.typeCheck
+  20  1.69% 50.85%       1 300343 net.sf.saxon.expr.ExpressionTool.resolveCallsToCurrentFunction
+  21  1.69% 52.54%       1 300344 net.sf.saxon.expr.FilterExpression.typeCheck
+  22  1.69% 54.24%       1 300345 net.sf.saxon.sort.GenericAtomicComparer.makeAtomicComparer
+  23  1.69% 55.93%       1 300257 net.sf.saxon.om.StandardNames.<clinit>
+  24  1.69% 57.63%       1 300318 sun.reflect.ClassFileAssembler.emitConstantPoolUTF8
+  25  1.69% 59.32%       1 300087 sun.misc.URLClassPath$FileLoader.getResource
+  26  1.69% 61.02%       1 300349 net.sf.saxon.style.StyleElement.allocateLocationId
+  27  1.69% 62.71%       1 300350 net.sf.saxon.instruct.GeneralVariable.getSelectExpression
+  28  1.69% 64.41%       1 300351 net.sf.saxon.instruct.FixedAttribute.<init>
+  29  1.69% 66.10%       1 300352 net.sf.saxon.expr.QuantifiedExpression.hasLoopingSubexpression
+  30  1.69% 67.80%       1 300353 net.sf.saxon.instruct.GeneralVariable.checkAgainstRequiredType
+  31  1.69% 69.49%       1 300354 java.lang.Object.getClass
+  32  1.69% 71.19%       1 300355 net.sf.saxon.instruct.Choose.optimize
+  33  1.69% 72.88%       1 300356 net.sf.saxon.expr.QuantifiedExpression.typeCheck
+  34  1.69% 74.58%       1 300081 java.lang.Thread.currentThread
+  35  1.69% 76.27%       1 300358 net.sf.saxon.instruct.SimpleContentConstructor.typeCheck
+  36  1.69% 77.97%       1 300359 net.sf.saxon.tinytree.TinyBuilder.startDocument
+  37  1.69% 79.66%       1 300360 com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument
+  38  1.69% 81.36%       1 300361 java.lang.String.replace
+  39  1.69% 83.05%       1 300362 java.util.Arrays.sort
+  40  1.69% 84.75%       1 300363 net.sf.saxon.value.AtomicValue.convert
+  41  1.69% 86.44%       1 300364 net.sf.saxon.pattern.NodeKindTest.matches
+  42  1.69% 88.14%       1 300365 net.sf.saxon.pattern.NodeKindTest.matches
+  43  1.69% 89.83%       1 300366 net.sf.saxon.instruct.ApplyTemplates.applyTemplates
+  44  1.69% 91.53%       1 300367 net.sf.saxon.expr.ContextMappingIterator.next
+  45  1.69% 93.22%       1 300368 net.sf.saxon.tinytree.TinyNodeImpl.getDisplayName
+  46  1.69% 94.92%       1 300369 net.sf.saxon.Transform.processFile
+  47  1.69% 96.61%       1 300082 java.lang.ClassLoader.loadClass
+  48  1.69% 98.31%       1 300204 com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.<init>
+  49  1.69% 100.00%       1 300098 net.sf.saxon.value.DateTimeValue.<init>
+CPU SAMPLES END
